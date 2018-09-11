@@ -15,6 +15,12 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 	private EntityManager entityManager;
 	
 	
+	
+	public EmpleadoDAOImpl(){
+		super();
+	}
+
+
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional

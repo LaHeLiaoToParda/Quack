@@ -6,7 +6,7 @@ import com.quackgenda.app.model.Empleado;
 
 public interface IServiciosEmpleado {
 	
-	List<Empleado> listadoEmpleado();
+	public List<Empleado> listadoEmpleado();
 	
 	Empleado fichaTecnica(int idEmpleados);
 	

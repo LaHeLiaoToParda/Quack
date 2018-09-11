@@ -14,7 +14,7 @@ public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
 	@Autowired
 	private IEmpleadoDAO empleadoDAO;
 
-	
+	@Override
 	public List<Empleado> listadoEmpleado() {
 		
 		return empleadoDAO.listadoEmpleado();
