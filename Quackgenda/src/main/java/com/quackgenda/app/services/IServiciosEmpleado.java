@@ -2,13 +2,13 @@ package com.quackgenda.app.services;
 
 import java.util.List;
 
-import com.quackgenda.app.model.Empleado;
+import com.quackgenda.app.model.Persona;
 
 public interface IServiciosEmpleado {
 	
-	public List<Empleado> listadoEmpleado();
+	public List<Persona> listadoEmpleado();
 	
-	Empleado fichaTecnica(int idEmpleados);
+	Persona fichaTecnica(int idPersonas);
 	
 
 }

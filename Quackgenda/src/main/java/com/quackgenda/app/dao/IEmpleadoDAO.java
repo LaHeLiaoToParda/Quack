@@ -2,14 +2,14 @@ package com.quackgenda.app.dao;
 
 import java.util.List;
 
-import com.quackgenda.app.model.Empleado;
+import com.quackgenda.app.model.Persona;
 
 
 public interface IEmpleadoDAO {
 	
-	public List<Empleado> listadoEmpleado();
+	public List<Persona> listadoEmpleado();
 	
-	Empleado fichaTecnica(int idEmpleados);
+	Persona fichaTecnica(int idPersonas);
 	
 	
 

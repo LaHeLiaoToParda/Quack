@@ -5,7 +5,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.quackgenda.app.dao.IEmpleadoDAO;
-import com.quackgenda.app.model.Empleado;
+import com.quackgenda.app.model.Persona;
 
 @Service
 @Transactional
@@ -15,15 +15,15 @@ public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
 	private IEmpleadoDAO empleadoDAO;
 
 	@Override
-	public List<Empleado> listadoEmpleado() {
+	public List<Persona> listadoEmpleado() {
 		
 		return empleadoDAO.listadoEmpleado();
 	}
 
 	
-	public Empleado fichaTecnica(int idEmpleados) {
+	public Persona fichaTecnica(int idPersonas) {
 		
-		return empleadoDAO.fichaTecnica(idEmpleados);
+		return empleadoDAO.fichaTecnica(idPersonas);
 	}
 	
 	

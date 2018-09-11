@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import com.quackgenda.app.model.Empleado;
+import com.quackgenda.app.model.Persona;
 
 public class EmpleadoDAOImpl implements IEmpleadoDAO{
 
@@ -24,17 +24,17 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional
-	public List<Empleado> listadoEmpleado() {
+	public List<Persona> listadoEmpleado() {
 		
 		String query = "FROM personas;";
 		
-		return (List<Empleado>) entityManager.createQuery(query).getResultList();
+		return (List<Persona>) entityManager.createQuery(query).getResultList();
 	}
 
 	
-	public Empleado fichaTecnica(int idEmpleados) {
-		
-		return null;
+	public Persona fichaTecnica(int idPersonas) {
+		String query="FROM personas WHERE idPersonas"+idPersonas+"";
+		return (Persona) entityManager.createQuery(query).getResultList();
 	}
 
 }
