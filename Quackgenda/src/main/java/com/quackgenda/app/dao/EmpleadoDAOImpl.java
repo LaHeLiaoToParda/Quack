@@ -5,6 +5,8 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.quackgenda.app.model.Empleado;
 
 public class EmpleadoDAOImpl implements IEmpleadoDAO{
@@ -13,9 +15,14 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 	private EntityManager entityManager;
 	
 	
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional
 	public List<Empleado> listadoEmpleado() {
 		
-		return null;
+		String query = "SELECT idEmpleado, nombre FROM personas;";
+		
+		return entityManager.createQuery(query).getResultList();
 	}
 
 	
