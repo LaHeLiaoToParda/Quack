@@ -82,7 +82,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<input type="text" class="textbox" value="Apellidos" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
 										<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
 										
-										<input type="submit" value="AÃ±adir empleado">
+										<input type="submit" value="Añadir empleado">
 							        </div>
 							</li>
     						<li><div class="top-grids">
@@ -169,7 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     						</li>
     						<li>
     							<div class="settings">
-    							    <a onclick="showHideConsultar();" href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Consultar empleado</h5></a>
+    								<a onclick="showHideConsultar();" href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Consultar empleado</h5></a>
     							        <div id="consultar" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">div que se despliega al pulsar consultar empleado.</div>
 	    							<a onclick="showHideAlta();" href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Alta empleado</h5></a>
 	    							    <div id="alta" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
