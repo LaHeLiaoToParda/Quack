@@ -1,4 +1,4 @@
-package com.quackgenda.app.service;
+package com.quackgenda.app.services;
 
 import java.util.List;
 
