@@ -90,7 +90,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>Listar todos los empleados<h4></h4></a>
+						      			<a href="listado.jsp"><h4>Listar todos los empleados<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
