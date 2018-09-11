@@ -1,6 +1,8 @@
-package com.quackgenda.app.DAO;
+package com.quackgenda.app.dao;
 
 import java.util.List;
+
+import com.quackgenda.app.model.Empleado;
 
 
 public interface IEmpleadoDAO {
