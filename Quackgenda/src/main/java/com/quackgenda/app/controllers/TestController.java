@@ -19,7 +19,21 @@ public class TestController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
-
+	@RequestMapping(value="welcome", method = RequestMethod.GET)
+	public ModelAndView welcome() throws Exception {
+		logger.info("-- en welcome.jsp");
+		ModelAndView model = new ModelAndView("welcome");
+		return model;
+	}
+	
+	@RequestMapping(value="welcome#1", method = RequestMethod.GET)
+	public ModelAndView listar() throws Exception {
+		logger.info("-- en listado.jsp");
+//		List<Persona>listaEmpleados = serviciosEmpleado.listadoEmpleado();
+		ModelAndView model = new ModelAndView("listado");
+//		model.addObject("listaEmple", listaEmpleados);
+		return model;
+	}
 	
 	@RequestMapping(value="UserList", method = RequestMethod.GET)
 	public ModelAndView test() throws Exception {
