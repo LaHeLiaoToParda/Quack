@@ -13,7 +13,6 @@ public class Telefono {
 	@Column(name = "IDTELEFONOS")
 	private int idTelefonos;
 	private String telefono;
-	@Column(name = "IDPERSONAS")
 	private int idPersonas;
 
 	public Telefono() {
@@ -46,6 +45,7 @@ public class Telefono {
 		this.telefono = telefono;
 	}
 
+	@Column(name = "IDPERSONAS")
 	public int getIdPersona() {
 		return idPersonas;
 	}

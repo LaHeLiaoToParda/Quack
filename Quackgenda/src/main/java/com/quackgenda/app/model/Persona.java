@@ -18,9 +18,7 @@ public class Persona {
 	private String apellido1;
 	private String apellido2;
 	private String dni;
-	@Column(name = "FECHANACIMIENTO")
 	private Date fechaNacimiento;
-	@Column(name = "IDEMPLEADOS")
 	private int idEmpleados;
 	
 	public Persona() {
@@ -82,6 +80,7 @@ public class Persona {
 		this.dni = dni;
 	}
 
+	@Column(name = "FECHANACIMIENTO")
 	public Date getFechaNacimiento() {
 		return fechaNacimiento;
 	}
@@ -90,6 +89,7 @@ public class Persona {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
+	@Column(name = "IDEMPLEADOS")
 	public int getIdEmpleado() {
 		return idEmpleados;
 	}

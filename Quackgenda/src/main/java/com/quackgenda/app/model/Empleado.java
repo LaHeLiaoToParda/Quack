@@ -14,14 +14,10 @@ public class Empleado {
 
 	@Column(name = "IDEMPLEADOS")
 	private int idEmpleados;
-	@Column(name = "CODEMPLEADO")
 	private String codEmpleado;
 	private String salario;
-	@Column(name = "FECHAALTA")
 	private Date fechaAlta;
-	@Column(name = "IDDEPARTAMENTO")
 	private int idDepartamento;
-	@Column(name = "IDCATEGORIA")
 	private int idCategoria;
 
 	public Empleado() {
@@ -50,6 +46,7 @@ public class Empleado {
 		this.idEmpleados = idEmpleados;
 	}
 
+	@Column(name = "CODEMPLEADO")
 	public String getCodEmpleado() {
 		return codEmpleado;
 	}
@@ -66,6 +63,7 @@ public class Empleado {
 		this.salario = salario;
 	}
 
+	@Column(name = "FECHAALTA")
 	public Date getFechaAlta() {
 		return fechaAlta;
 	}
@@ -74,6 +72,7 @@ public class Empleado {
 		this.fechaAlta = fechaAlta;
 	}
 
+	@Column(name = "IDDEPARTAMENTO")
 	public int getIdDepartamento() {
 		return idDepartamento;
 	}
@@ -82,6 +81,7 @@ public class Empleado {
 		this.idDepartamento = idDepartamento;
 	}
 
+	@Column(name = "IDCATEGORIA")
 	public int getIdCategoria() {
 		return idCategoria;
 	}
