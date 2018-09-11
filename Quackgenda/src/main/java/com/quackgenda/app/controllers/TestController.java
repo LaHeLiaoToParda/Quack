@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.quackgenda.app.model.Empleado;
+import com.quackgenda.app.model.Persona;
 import com.quackgenda.app.services.IServiciosEmpleado;
  
 @Controller
@@ -23,7 +23,7 @@ public class TestController {
 	@RequestMapping("/welcome")
 	public ModelAndView handleRequest() throws Exception {
 		logger.info("-- Pagina Principal");
-		List<Empleado>listEmpleados = serviciosEmpleado.listadoEmpleado();
+		List<Persona>listEmpleados = serviciosEmpleado.listadoEmpleado();
 		ModelAndView model = new ModelAndView("welcome");
 		model.addObject("listEmpleados", listEmpleados);
 		return model;
