@@ -1,5 +1,13 @@
 package com.quackgenda.app.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "DIRECCIONES")
 public class Direccion {
 
 	private int idDirecciones;
@@ -24,6 +32,9 @@ public class Direccion {
 		this.idPersona = idPersona;
 	}
 
+	@Id
+	@GeneratedValue
+	@Column(name = "IDDIRECIONES")
 	public int getIdDirecciones() {
 		return idDirecciones;
 	}
