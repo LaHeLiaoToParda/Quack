@@ -1,12 +1,9 @@
 package com.quackgenda.app.service;
 
 import java.util.List;
-
 import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.quackgenda.app.dao.IEmpleadoDAO;
 import com.quackgenda.app.model.Empleado;
 
@@ -15,18 +12,18 @@ import com.quackgenda.app.model.Empleado;
 public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
 	
 	@Autowired
-	private IEmpleadoDAO userDAO;
+	private IEmpleadoDAO empleadoDAO;
 
 	
 	public List<Empleado> listadoEmpleado() {
 		
-		return userDAO.listadoEmpleado();
+		return empleadoDAO.listadoEmpleado();
 	}
 
 	
 	public Empleado fichaTecnica(int idEmpleados) {
 		
-		return userDAO.fichaTecnica(idEmpleados);
+		return empleadoDAO.fichaTecnica(idEmpleados);
 	}
 	
 	
