@@ -6,6 +6,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
+import com.quackgenda.app.model.Empleado;
+
 @Service
 @Transactional
 public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
@@ -15,13 +17,13 @@ public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
 	
 	public List<Empleado> listadoEmpleado() {
 		
-		return null;
+		return datos.listadoEmpleado();
 	}
 
 	
 	public Empleado fichaTecnica(int idEmpleados) {
 		
-		return null;
+		return datos.fichaTecnica(idEmpleados);
 	}
 	
 	
