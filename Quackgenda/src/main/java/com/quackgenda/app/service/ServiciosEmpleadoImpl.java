@@ -15,18 +15,18 @@ import com.quackgenda.app.model.Empleado;
 public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
 	
 	@Autowired
-	private IEmpleadoDAO userDAO;
+	private IEmpleadoDAO empleadoDAO;
 
 	
 	public List<Empleado> listadoEmpleado() {
 		
-		return userDAO.listadoEmpleado();
+		return empleadoDAO.listadoEmpleado();
 	}
 
 	
 	public Empleado fichaTecnica(int idEmpleados) {
 		
-		return userDAO.fichaTecnica(idEmpleados);
+		return empleadoDAO.fichaTecnica(idEmpleados);
 	}
 	
 	
