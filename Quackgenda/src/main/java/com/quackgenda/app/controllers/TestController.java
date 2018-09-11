@@ -20,4 +20,12 @@ public class TestController {
 		return model;
 	}
 	
+	@RequestMapping("/welcome")
+	public ModelAndView loadTest() throws Exception {
+		logger.info("-- en /welcome");		
+		ModelAndView model = new ModelAndView("welcome");
+//		model.addObject("mensajeTest", "test de prueba");
+		return model;
+	}
+	
 }

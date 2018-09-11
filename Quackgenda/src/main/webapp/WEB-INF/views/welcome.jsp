@@ -1,4 +1,6 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -22,6 +24,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					domainKey: ''
 				});
 				})();
+			function showHideConsultar(){
+			    var divId = document.getElementById("consultar");
+			    var currentClass = divId.className;
+			    if (currentClass == "noMostrar") { // si el elemento ya esta oculto
+			        divId.className = "mostrar";   // muestro el elemento
+			    } else {
+			        divId.className = "noMostrar";  // si el elemento NO esta ocutlo, lo oculto
+			    }
+			}
+			function showHideAlta(){
+			    var divId = document.getElementById("alta");
+			    var currentClass = divId.className;
+			    if (currentClass == "noMostrar") { // si el elemento ya esta oculto
+			        divId.className = "mostrar";   // muestro el elemento
+			    } else {
+			        divId.className = "noMostrar";  // si el elemento NO esta ocutlo, lo oculto
+			    }
+			}
+			function showHideModificar(){
+			    var divId = document.getElementById("modificar");
+			    var currentClass = divId.className;
+			    if (currentClass == "noMostrar") { // si el elemento ya esta oculto
+			        divId.className = "mostrar";   // muestro el elemento
+			    } else {
+			        divId.className = "noMostrar";  // si el elemento NO esta ocutlo, lo oculto
+			    }
+			}
+			function showHideBaja(){
+			    var divId = document.getElementById("baja");
+			    var currentClass = divId.className;
+			    if (currentClass == "noMostrar") { // si el elemento ya esta oculto
+			        divId.className = "mostrar";   // muestro el elemento
+			    } else {
+			        divId.className = "noMostrar";  // si el elemento NO esta ocutlo, lo oculto
+			    }
+			}
 		</script>
 
 </head>
@@ -87,7 +125,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>BÃºsqueda por ciudad<h4></h4></a>
+						      			<a href="#single.html"><h4>Búsqueda por ciudad<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <!--
@@ -96,7 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>BÃºsqueda por cÃ³digo postal<h4></h4></a>
+						      			<a href="#single.html"><h4>Búsqueda por código postal<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			<!--
@@ -105,7 +143,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>BÃºsqueda por telefono<h4></h4></a>
+						      			<a href="#single.html"><h4>Búsqueda por telefono<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			<!--
@@ -114,7 +152,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>BÃºsqueda por categorÃ­a<h4></h4></a>
+						      			<a href="#single.html"><h4>Búsqueda por categoría<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			<!--
@@ -123,7 +161,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>BÃºsqueda por departamento<h4></h4></a>
+						      			<a href="#single.html"><h4>Búsqueda por departamento<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      		</div>    		
@@ -132,21 +170,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     						<li>
     							<div class="settings">
     							    <a href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Consultar empleado</h5></a>
-    							        <div style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">div que se despliega al pulsar consultar empleado.</div>
+    							        <div id="consultar" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">div que se despliega al pulsar consultar empleado.</div>
 	    							<a href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Alta empleado</h5></a>
-	    							    <div style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
+	    							    <div id="alta" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
 	    							        <div class="form">		
 								                <input style="width: 80%" type="text" class="active textbox" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
 										        <input style="width: 80%" type="text" class="textbox" value="Apellidos" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
 										        <input style="width: 80%" type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
 										
-										        <input style="width: 80%" type="submit" value="AÃ±adir empleado">
+										        <input style="width: 80%" type="submit" value="Añadir empleado">
 							                </div>
 	    							    </div>
 	    							<a href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Modificar empleado</h5></a>
-	    							    <div style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">consultar</div>
+	    							    <div id="modificar" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">consultar</div>
 	    							<a href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Baja empleado</h5></a>
-	    							    <div style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">baja</div>
+	    							    <div id="baja" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">baja</div>
     							</div>
     						</li>
     					</ul>
