@@ -2,6 +2,14 @@ package com.quackgenda.app.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "EMPLEADOS")
 public class Empleado {
 
 	private int idEmpleados;
@@ -26,6 +34,9 @@ public class Empleado {
 		this.idCategoria = idCategoria;
 	}
 
+	@Id
+	@GeneratedValue
+	@Column(name = "IDEMPLEADOS")
 	public int getIdEmpleados() {
 		return idEmpleados;
 	}
