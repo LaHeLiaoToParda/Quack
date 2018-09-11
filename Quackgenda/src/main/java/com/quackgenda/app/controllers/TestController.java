@@ -28,6 +28,15 @@ public class TestController {
 		return model;
 	}
 	
+	@RequestMapping(value="testJSP", method = RequestMethod.GET)
+	public ModelAndView test() throws Exception {
+		logger.info("-- Pagina Principal");
+		List<Persona>listaEmpleados = serviciosEmpleado.listadoEmpleado();
+		ModelAndView model = new ModelAndView("welcome");
+		model.addObject("listaEmpleados", listaEmpleados);
+		return model;
+	}
+	
 	/*@RequestMapping("/welcome")
 	public ModelAndView loadTest() throws Exception {
 		logger.info("-- en /welcome");		

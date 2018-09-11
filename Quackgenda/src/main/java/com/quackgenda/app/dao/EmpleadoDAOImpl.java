@@ -35,7 +35,7 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 	@Override
 	@Transactional
 	public Persona fichaTecnica(int idPersonas) {
-		String query="FROM PERSONAS WHERE idPersonas"+idPersonas;
+		String query="FROM PERSONAS WHERE idPersonas = "+idPersonas;
 		return (Persona) entityManager.createQuery(query).getResultList();
 	}
 

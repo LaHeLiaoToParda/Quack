@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <!-- Static content -->
 <link rel="stylesheet" href="/resources/css/estilos.css">
 <script type="text/javascript" src="/resources/js/app.js"></script>
@@ -12,5 +12,8 @@
 </head>
 <body>
 	<h1>${mensajeTest}</h1>
+	<c:forEach var="empleado" items="${listaEmpleados}">
+    	<p><c:out value = "${listaEmpleados.nombre}"/></p>
+    </c:forEach>
 </body>
 </html>
