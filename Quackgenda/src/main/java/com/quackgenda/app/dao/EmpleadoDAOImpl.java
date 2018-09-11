@@ -2,13 +2,15 @@ package com.quackgenda.app.dao;
 
 import java.util.List;
 
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.quackgenda.app.model.Persona;
-
+@Repository
 public class EmpleadoDAOImpl implements IEmpleadoDAO{
 
 	@PersistenceContext	
@@ -26,7 +28,7 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 	@Transactional
 	public List<Persona> listadoEmpleado() {
 		
-		String query = "FROM personas;";
+		String query = "SELECT * FROM personas;";
 		
 		return (List<Persona>) entityManager.createQuery(query).getResultList();
 	}
@@ -35,7 +37,7 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 	@Override
 	@Transactional
 	public Persona fichaTecnica(int idPersonas) {
-		String query="FROM personas WHERE idPersonas"+idPersonas+";";
+		String query="SELECT * FROM personas WHERE idPersonas"+idPersonas+";";
 		return (Persona) entityManager.createQuery(query).getResultList();
 	}
 
