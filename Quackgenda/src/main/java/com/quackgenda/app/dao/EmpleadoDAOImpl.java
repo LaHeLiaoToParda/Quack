@@ -20,9 +20,9 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 	@Transactional
 	public List<Empleado> listadoEmpleado() {
 		
-		String query = "SELECT idEmpleado, nombre FROM personas;";
+		String query = "FROM personas;";
 		
-		return entityManager.createQuery(query).getResultList();
+		return (List<Empleado>) entityManager.createQuery(query).getResultList();
 	}
 
 	
