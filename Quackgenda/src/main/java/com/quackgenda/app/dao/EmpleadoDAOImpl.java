@@ -33,7 +33,7 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 
 	
 	public Persona fichaTecnica(int idPersonas) {
-		String query="FROM personas WHERE idPersonas"+idPersonas+"";
+		String query="FROM personas WHERE idPersonas"+idPersonas+";";
 		return (Persona) entityManager.createQuery(query).getResultList();
 	}
 
