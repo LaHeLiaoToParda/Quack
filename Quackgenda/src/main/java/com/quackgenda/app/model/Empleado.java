@@ -12,11 +12,16 @@ import javax.persistence.Table;
 @Table(name = "EMPLEADOS")
 public class Empleado {
 
+	@Column(name = "IDEMPLEADOS")
 	private int idEmpleados;
+	@Column(name = "CODEMPLEADO")
 	private String codEmpleado;
 	private String salario;
+	@Column(name = "FECHAALTA")
 	private Date fechaAlta;
+	@Column(name = "IDDEPARTAMENTO")
 	private int idDepartamento;
+	@Column(name = "IDCATEGORIA")
 	private int idCategoria;
 
 	public Empleado() {

@@ -10,11 +10,14 @@ import javax.persistence.Table;
 @Table(name = "DIRECCIONES")
 public class Direccion {
 
+	@Column(name = "IDDIRECCIONES")
 	private int idDirecciones;
 	private String direccion;
+	@Column(name = "CODPOSTAL")
 	private String codPostal;
 	private String localidad;
 	private String provincia;
+	@Column(name = "IDPERSONA")
 	private int idPersona;
 
 	public Direccion() {

@@ -10,9 +10,11 @@ import javax.persistence.Table;
 @Table(name = "TELEFONOS")
 public class Telefono {
 
+	@Column(name = "IDTELEFONOS")
 	private int idTelefonos;
 	private String telefono;
-	private int idPersona;
+	@Column(name = "IDPERSONAS")
+	private int idPersonas;
 
 	public Telefono() {
 		super();
@@ -22,7 +24,7 @@ public class Telefono {
 		super();
 		this.idTelefonos = idTelefonos;
 		this.telefono = telefono;
-		this.idPersona = idPersona;
+		this.idPersonas = idPersona;
 	}
 
 	@Id
@@ -45,16 +47,16 @@ public class Telefono {
 	}
 
 	public int getIdPersona() {
-		return idPersona;
+		return idPersonas;
 	}
 
-	public void setIdPersona(int idPersona) {
-		this.idPersona = idPersona;
+	public void setIdPersona(int idPersonas) {
+		this.idPersonas = idPersonas;
 	}
 
 	@Override
 	public String toString() {
-		return "Telefono [idTelefonos=" + idTelefonos + ", telefono=" + telefono + ", idPersona=" + idPersona + "]";
+		return "Telefono [idTelefonos=" + idTelefonos + ", telefono=" + telefono + ", idPersona=" + idPersonas + "]";
 	}
 
 }

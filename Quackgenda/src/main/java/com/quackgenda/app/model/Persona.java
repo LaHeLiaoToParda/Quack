@@ -12,13 +12,16 @@ import javax.persistence.Table;
 @Table(name = "PERSONAS")
 public class Persona {
 	
+	@Column(name = "IDPERSONAS")
 	private int idPersonas;
 	private String nombre;
 	private String apellido1;
 	private String apellido2;
 	private String dni;
+	@Column(name = "FECHANACIMIENTO")
 	private Date fechaNacimiento;
-	private int idEmpleado;
+	@Column(name = "IDEMPLEADOS")
+	private int idEmpleados;
 	
 	public Persona() {
 		super();
@@ -33,7 +36,7 @@ public class Persona {
 		this.apellido2 = apellido2;
 		this.dni = dni;
 		this.fechaNacimiento = fechaNacimiento;
-		this.idEmpleado = idEmpleado;
+		this.idEmpleados = idEmpleado;
 	}
 
 	@Id
@@ -88,17 +91,17 @@ public class Persona {
 	}
 
 	public int getIdEmpleado() {
-		return idEmpleado;
+		return idEmpleados;
 	}
 
-	public void setIdEmpleado(int idEmpleado) {
-		this.idEmpleado = idEmpleado;
+	public void setIdEmpleado(int idEmpleados) {
+		this.idEmpleados = idEmpleados;
 	}
 
 	@Override
 	public String toString() {
 		return "Persona [idPersonas=" + idPersonas + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2="
-				+ apellido2 + ", dni=" + dni + ", fechaNacimiento=" + fechaNacimiento + ", idEmpleado=" + idEmpleado
+				+ apellido2 + ", dni=" + dni + ", fechaNacimiento=" + fechaNacimiento + ", idEmpleado=" + idEmpleados
 				+ "]";
 	}
 	
