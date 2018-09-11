@@ -22,7 +22,7 @@ public class Persona {
 	private String dni;
 	@DateTimeFormat(pattern = "yyyy.MM.dd")
 	private Date fechaNacimiento;
-	private int idEmpleados;
+	private int idEmpleado;
 	
 	public Persona() {
 		super();
@@ -37,7 +37,7 @@ public class Persona {
 		this.apellido2 = apellido2;
 		this.dni = dni;
 		this.fechaNacimiento = fechaNacimiento;
-		this.idEmpleados = idEmpleado;
+		this.idEmpleado = idEmpleado;
 	}
 
 	@Id
@@ -92,19 +92,19 @@ public class Persona {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
-	@Column(name = "IDEMPLEADOS")
+	@Column(name = "IDEMPLEADO")
 	public int getIdEmpleado() {
-		return idEmpleados;
+		return idEmpleado;
 	}
 
 	public void setIdEmpleado(int idEmpleados) {
-		this.idEmpleados = idEmpleados;
+		this.idEmpleado = idEmpleados;
 	}
 
 	@Override
 	public String toString() {
 		return "Persona [idPersonas=" + idPersonas + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2="
-				+ apellido2 + ", dni=" + dni + ", fechaNacimiento=" + fechaNacimiento + ", idEmpleado=" + idEmpleados
+				+ apellido2 + ", dni=" + dni + ", fechaNacimiento=" + fechaNacimiento + ", idEmpleado=" + idEmpleado
 				+ "]";
 	}
 	

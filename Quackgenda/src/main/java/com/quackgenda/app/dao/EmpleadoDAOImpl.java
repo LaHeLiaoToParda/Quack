@@ -5,6 +5,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+
 import com.quackgenda.app.model.Persona;
 
 
@@ -20,15 +21,16 @@ public class EmpleadoDAOImpl implements IEmpleadoDAO{
 		super();
 	}
 
-
+	
 	@SuppressWarnings("unchecked")
 	@Override
 	@Transactional
 	public List<Persona> listadoEmpleado() {
 		
-		String query = "FROM PERSONAS";
+		String query="FROM Persona";
 		
 		return (List<Persona>) entityManager.createQuery(query).getResultList();
+
 	}
 
 	

@@ -19,31 +19,15 @@ public class TestController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
-	@RequestMapping(value="welcome", method = RequestMethod.GET)
-	public ModelAndView handleRequest() throws Exception {
-		logger.info("-- Pagina Principal");
-//		List<Persona>listEmpleados = serviciosEmpleado.listadoEmpleado();
-		ModelAndView model = new ModelAndView("welcome");
-//		model.addObject("listEmpleados", listEmpleados);
-		return model;
-	}
+
 	
-	@RequestMapping(value="testJSP", method = RequestMethod.GET)
+	@RequestMapping(value="UserList", method = RequestMethod.GET)
 	public ModelAndView test() throws Exception {
 		logger.info("-- Pagina Principal");
 		List<Persona>listaEmpleados = serviciosEmpleado.listadoEmpleado();
-		ModelAndView model = new ModelAndView("welcome");
-		model.addObject("listaEmpleados", listaEmpleados);
+		ModelAndView model = new ModelAndView("UserList");
+		model.addObject("lista", listaEmpleados);
 		return model;
-	}
-	
-	/*@RequestMapping("/welcome")
-	public ModelAndView loadTest() throws Exception {
-		logger.info("-- en /welcome");		
-		ModelAndView model = new ModelAndView("welcome");
-//		model.addObject("mensajeTest", "test de prueba");
-		return model;
-	}
-	*/
-	
+
+	}	
 }
