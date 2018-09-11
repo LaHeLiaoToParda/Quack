@@ -382,12 +382,7 @@ body{
 .footer p a:hover{
 	color:#90C842;
 }
-.mostrar {
-	display:block;
-}
-.noMostrar {
-	display: none;
-}
+
 /*-----start-responsive-design------*/
 @media only screen and (max-width: 1366px){
 	.wrap{
@@ -517,4 +512,10 @@ body{
 		margin-left: 9px;
 		width: 69%;
 	}
+}
+.mostrar {
+	display: block;
+}
+.noMostrar {
+	display: none;
 }

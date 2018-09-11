@@ -14,8 +14,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="js/JFCore.js"></script>
+<link rel="stylesheet" href="../resources/css/style.css" />
+<script type="text/javascript" src="../resources/js/JFCore.js"></script>
 		
 		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
 		<script type="text/javascript">
@@ -87,28 +87,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</li>
     						<li><div class="top-grids">
 					      			<div class="top-grid1">
-					      				<img src="images/f1.jpg" title="" alt="">
+					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="#single.html"><h4>Listar todos los empleados<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
-					      				<img src="images/f2.jpg" title="" alt="">
+					      				<img src="../resources/images/f2.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="#single.html"><h4>Listar por departamento<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
-					      				<img src="images/f3.jpg" title="" alt="">
+					      				<img src="../resources/images/f3.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="#single.html"><h4>Listar por categoria<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
-					      				<img src="images/f4.jpg" title="" alt="">
+					      				<img src="../resources/images/f4.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="#single.html"><h4>Listar por nombre<h4></h4></a>
@@ -121,7 +121,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					    		<div class="top-grids">
 					      			<!--
 					      			<div class="top-grid1">
-					      				<img src="images/f1.jpg" title="" alt="">
+					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
@@ -130,7 +130,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			 <!--
 					      			 <div class="top-grid1">
-					      				<img src="images/f2.jpg" title="" alt="">
+					      				<img src="../resources/images/f2.jpg" title="" alt="">
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
@@ -139,7 +139,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			<!--
 					      			 <div class="top-grid1">
-					      				<img src="images/f3.jpg" title="" alt="">
+					      				<img src="../resources/images/f3.jpg" title="" alt="">
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
@@ -148,7 +148,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			<!--
 					      			 <div class="top-grid1">
-					      				<img src="images/f4.jpg" title="" alt="">
+					      				<img src="../resources/images/f4.jpg" title="" alt="">
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
@@ -157,7 +157,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      			</div>
 					      			<!--
 					      			<div class="top-grid1">
-					      				<img src="images/f1.jpg" title="" alt="">
+					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			-->
 					      			<div class="top-grid2">
@@ -169,10 +169,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     						</li>
     						<li>
     							<div class="settings">
-    							    <a onclick="showHideConsultar();" href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Consultar empleado</h5></a>
-    							        <div id="consultar" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">div que se despliega al pulsar consultar empleado.</div>
-	    							<a onclick="showHideAlta();" href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Alta empleado</h5></a>
-	    							    <div id="alta" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
+    							    <a onclick="showHideConsultar();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Consultar empleado</h5></a>
+    							        <div id="consultar" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">div que se despliega al pulsar consultar empleado.</div>
+	    							<a onclick="showHideAlta();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Alta empleado</h5></a>
+	    							    <div id="alta" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
 	    							        <div class="form">		
 								                <input style="width: 80%" type="text" class="active textbox" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
 										        <input style="width: 80%" type="text" class="textbox" value="Apellidos" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
@@ -181,10 +181,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										        <input style="width: 80%" type="submit" value="Añadir empleado">
 							                </div>
 	    							    </div>
-	    							<a onclick="showHideModificar();" href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Modificar empleado</h5></a>
-	    							    <div id="modificar" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">consultar</div>
-	    							<a onclick="showHideBaja();" href="#single.html"><h5><img src="images/arrow1.png" title="" alt="">Baja empleado</h5></a>
-	    							    <div id="baja" class="display" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">baja</div>
+	    							<a onclick="showHideModificar();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Modificar empleado</h5></a>
+	    							    <div id="modificar" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">consultar</div>
+	    							<a onclick="showHideBaja();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Baja empleado</h5></a>
+	    							    <div id="baja" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">baja</div>
     							</div>
     						</li>
     					</ul>
