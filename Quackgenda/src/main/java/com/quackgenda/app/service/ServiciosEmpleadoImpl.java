@@ -6,6 +6,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
+import com.quackgenda.app.model.Empleado;
+
 @Service
 @Transactional
 public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
