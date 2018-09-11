@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name = "EMPLEADOS")
 public class Empleado {
@@ -16,6 +18,7 @@ public class Empleado {
 	private int idEmpleados;
 	private String codEmpleado;
 	private String salario;
+	@DateTimeFormat(pattern = "yyyy.MM.dd HH:mm:ss")
 	private Date fechaAlta;
 	private int idDepartamento;
 	private int idCategoria;
