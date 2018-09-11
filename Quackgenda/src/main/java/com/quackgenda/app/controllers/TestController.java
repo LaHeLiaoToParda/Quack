@@ -26,12 +26,13 @@ public class TestController {
 		return model;
 	}
 	
-	@RequestMapping(value="welcome#1", method = RequestMethod.GET)
+	@RequestMapping(value="listadoTest", method = RequestMethod.GET)
 	public ModelAndView listar() throws Exception {
 		logger.info("-- en listado.jsp");
 //		List<Persona>listaEmpleados = serviciosEmpleado.listadoEmpleado();
 		ModelAndView model = new ModelAndView("listado");
 //		model.addObject("listaEmple", listaEmpleados);
+		model.addObject("textoPrueba", "listar todos");
 		return model;
 	}
 	
