@@ -8,5 +8,6 @@ public class QuackgendaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(QuackgendaApplication.class, args);
+		//djbnsdjin
 	}
 }
