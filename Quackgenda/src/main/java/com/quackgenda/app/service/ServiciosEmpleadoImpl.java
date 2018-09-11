@@ -15,13 +15,13 @@ public class ServiciosEmpleadoImpl implements IServiciosEmpleado{
 	
 	public List<Empleado> listadoEmpleado() {
 		
-		return null;
+		return datos.listadoEmpleado();
 	}
 
 	
 	public Empleado fichaTecnica(int idEmpleados) {
 		
-		return null;
+		return datos.fichaTecnica(idEmpleados);
 	}
 	
 	
