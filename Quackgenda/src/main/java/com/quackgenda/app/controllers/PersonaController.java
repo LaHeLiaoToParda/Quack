@@ -46,7 +46,6 @@ public class PersonaController {
 		ModelAndView model = new ModelAndView("listadoEmpleados");
 		List<Persona>listaPersonas = serviciosPersona.listarTodos();
 		model.addObject("lista",listaPersonas);
-		model.addObject("titulo","Listado de empleados");
 		return model;
 	}
 	
@@ -60,16 +59,15 @@ public class PersonaController {
 		return model;
 	}
 	
-//	metodo para la fichar tecnica, descomentar cuando buscarPersona(id) funcione
-//	@RequestMapping(value="fichaTecnica", method=RequestMethod.GET)
-//	public ModelAndView fichaTecnica(HttpServletRequest request) throws Exception {
-//  		logger.info("-- en fichaTecnica()");
-//  		ModelAndView model = new ModelAndView("fichaTecnica");
-//  		int personaId = Integer.parseInt(request.getParameter("personaId"));
-//  		Persona persona = serviciosPersona.buscarPersona(personaId);
-//  		model.addObject("persona",persona);
-//  		model.addObject("titulo","Ficha tecnica empleado");
-//		return model;
-//	}
+	
+	@RequestMapping(value="fichaTecnica", method=RequestMethod.GET)
+	public ModelAndView fichaTecnica(HttpServletRequest request) throws Exception {
+  		logger.info("-- en fichaTecnica()");
+  		ModelAndView model = new ModelAndView("fichaTecnica");
+  		int personaId = Integer.parseInt(request.getParameter("personaId"));
+  		Persona persona = serviciosPersona.buscarPersona(personaId);
+  		model.addObject("persona",persona);
+		return model;
+	}
 	
 }

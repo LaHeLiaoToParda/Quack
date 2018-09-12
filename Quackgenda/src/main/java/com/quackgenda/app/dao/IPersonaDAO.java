@@ -7,4 +7,5 @@ public interface IPersonaDAO {
 
 	List<Persona> listarTodos();
 
+	Persona buscarPersona(int id);
 }
