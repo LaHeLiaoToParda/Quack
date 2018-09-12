@@ -138,7 +138,7 @@
 										<th>Provincia: </th>
 									</tr>
 							
-									<c:forEach var="persona" items="${lista}">
+									<c:forEach var="persona" items="${personaId}">
 										<tr>
 											<td>${persona.nombre}</td>
 											<td>${persona.apellido1}</td>
