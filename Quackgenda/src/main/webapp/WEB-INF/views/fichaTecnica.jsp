@@ -138,21 +138,21 @@
 										<th>Provincia: </th>
 									</tr>
 							
-									<c:forEach var="persona" items="${personaId}">
+									<c:out value = "${personaId}">
 										<tr>
-											<td>${persona.nombre}</td>
-											<td>${persona.apellido1}</td>
-											<td>${persona.apellido2}</td>
-											<td>${persona.dni}</td>
-											<td>${persona.fecha_nacimiento}</td>
-											<td>${persona.empleado.cod_empleado}</td>
-											<td>${persona.empleado.salario}</td>
-											<td>${persona.empleado.fecha_alta}</td>
-											<td>${persona.empleado.imagen_empleado}</td>
-											<td>${persona.empleado.categoria.nombre}</td>
-											<td>${persona.empleado.categoria.descripcion}</td>
-											<td>${persona.empleado.departamento.nombre}</td>
-											<td><c:forEach var="telefono"
+											<td>${personaId.nombre}</td>
+											<td>${personaId.apellido1}</td>
+											<td>${personaId.apellido2}</td>
+											<td>${personaId.dni}</td>
+											<td>${personaId.fecha_nacimiento}</td>
+											<td>${personaId.empleado.cod_empleado}</td>
+											<td>${personaId.empleado.salario}</td>
+											<td>${personaId.empleado.fecha_alta}</td>
+											<td>${personaId.empleado.imagen_empleado}</td>
+											<td>${personaId.empleado.categoria.nombre}</td>
+											<td>${personaId.empleado.categoria.descripcion}</td>
+											<td>${personaId.empleado.departamento.nombre}</td>
+										<%-- 	<td><c:forEach var="telefono"
 													items="${persona.telefonos}">
 													${telefono.telefono}<br />
 											</c:forEach></td>
@@ -167,10 +167,10 @@
 											</c:forEach></td>
 											<td><c:forEach var="direccion" items="${persona.direcciones}">
 												${direccion.provincia}
-											</c:forEach></td>
+											</c:forEach></td> --%>
 										</tr>
 
-									</c:forEach>
+									</c:out>
 
 
 								</table>
