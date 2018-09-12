@@ -59,7 +59,7 @@ public class PersonaController {
 		return model;
 	}
 	
-	
+	//metodo para mostrar la ficha tecnica
 	@RequestMapping(value="fichaTecnica", method=RequestMethod.GET)
 	public ModelAndView fichaTecnica(HttpServletRequest request) throws Exception {
   		logger.info("-- en fichaTecnica()");
