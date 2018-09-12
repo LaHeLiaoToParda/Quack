@@ -1,6 +1,9 @@
 package com.quackgenda.app.controllers;
 
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,34 +29,44 @@ public class PersonaController {
 		return model;
 	}
 	
+	//metodo para el "backoffice" listar empleados
 	@RequestMapping(value="empleados", method=RequestMethod.GET)
-	public ModelAndView listarPersonas() throws Exception {
-		logger.info("-- en listarEmpleados()");
+	public ModelAndView empleadosTabla() throws Exception {
+		logger.info("-- en empleadosTabla()");
 		ModelAndView model = new ModelAndView("test");
-		
 		List<Persona>listaPersonas = serviciosPersona.listarTodos();
 		model.addObject("lista",listaPersonas);
-		
 		return model;
 	}
 	
-	@RequestMapping(value="/listaEmpleados", method=RequestMethod.GET)
-	public ModelAndView welcome2() throws Exception {
+	//metodo para listar todos los empleados
+	@RequestMapping(value="listaEmpleados", method=RequestMethod.GET)
+	public ModelAndView listarEmpleados() throws Exception {
 		logger.info("-- en listarEmpleados()");
 		ModelAndView model = new ModelAndView("listadoEmpleados");
-		
 		List<Persona>listaPersonas = serviciosPersona.listarTodos();
 		model.addObject("lista",listaPersonas);
 		return model;
 	}
 	
-	@RequestMapping(value="/Busqueda", method=RequestMethod.GET)
+	//metodo busqueda
+	@RequestMapping(value="busqueda", method=RequestMethod.GET)
 	public ModelAndView busquedaCategoria() throws Exception {
 		logger.info("-- en listarEmpleados()");
 		ModelAndView model = new ModelAndView("listadoEmpleados");
-		
 		List<Persona>listaPersonas = serviciosPersona.listarTodos();
 		model.addObject("lista",listaPersonas);
+		return model;
+	}
+	
+	
+	@RequestMapping(value="fichaTecnica", method=RequestMethod.GET)
+	public ModelAndView fichaTecnica(HttpServletRequest request) throws Exception {
+  		logger.info("-- en fichaTecnica()");
+  		ModelAndView model = new ModelAndView("fichaTecnica");
+  		int personaId = Integer.parseInt(request.getParameter("personaId"));
+  		Persona persona = serviciosPersona.buscarPersona(personaId);
+  		model.addObject("persona",persona);
 		return model;
 	}
 	

@@ -15,9 +15,14 @@ public class ServiciosPersonaImpl implements IServiciosPersona {
 	@Autowired
 	private IPersonaDAO personaDAO;
 	
-	@Override
+	
 	public List<Persona> listarTodos() {
 		return personaDAO.listarTodos();
+	}
+
+	
+	public Persona buscarPersona(int id) {
+		return personaDAO.buscarPersona(id);
 	}
 
 	
