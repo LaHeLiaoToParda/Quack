@@ -25,6 +25,11 @@
 			<td>empleado.categoria.nombre</td>
 			<td>empleado.categoria.descripcion</td>
 			<td>empleado.departamento.nombre</td>
+			<td>telefono</td>
+			<td>direccion</td>
+			<td>codigo postal</td>
+			<td>localidad</td>
+			<td>provincia</td>
 		</tr>
 		<c:forEach var="persona" items="${lista}">
 			<tr>
@@ -40,6 +45,31 @@
 				<td>${persona.empleado.categoria.nombre}</td>
 				<td>${persona.empleado.categoria.descripcion}</td>
 				<td>${persona.empleado.departamento.nombre}</td>
+				<td>
+					<c:forEach var="telefono" items="${persona.telefonos}">
+						${telefono.telefono}<br/>
+					</c:forEach>
+				</td>
+				<td>
+					<c:forEach var="direccion" items="${persona.direcciones}">
+						${direccion.direccion}
+					</c:forEach>
+				</td>
+				<td>
+					<c:forEach var="direccion" items="${persona.direcciones}">
+						${direccion.cod_postal}
+					</c:forEach>
+				</td>
+				<td>
+					<c:forEach var="direccion" items="${persona.direcciones}">
+						${direccion.localidad}
+					</c:forEach>
+				</td>
+				<td>
+					<c:forEach var="direccion" items="${persona.direcciones}">
+						${direccion.provincia}
+					</c:forEach>
+				</td>
 			</tr>    	
     	<%-- <c:out value = "${persona.nombre}"/><br/> --%>
     	</c:forEach>
