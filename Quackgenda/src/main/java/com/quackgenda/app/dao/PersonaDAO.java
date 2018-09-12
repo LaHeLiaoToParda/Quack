@@ -23,5 +23,12 @@ public class PersonaDAO implements IPersonaDAO {
 		String hql = "FROM Persona";
 		return (List<Persona>) entityManager.createQuery(hql).getResultList();
 	}
+	
+	@SuppressWarnings("unchecked")
+	@Transactional
+	public List<Persona> buscarPersona(int id_persona) {
+		String hql = "FROM Persona where id_persona="+id_persona;
+		return (List<Persona>) entityManager.createQuery(hql).getResultList();
+	}
 
 }
