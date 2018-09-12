@@ -81,9 +81,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     					<ul>
     						<li class="active">
     							<h3>"${textoTitulo}"</h3>
-    							<c:forEach var="persona" items="${lista}">
+    							<c:forEach var="p" items="${lista}">
     								<div class="top-grid2">
-    									<h4><a href="fichaTecnica?id=${lista.persona.id_persona}">${persona.nombre}  -  ${persona.apellido1}  -  ${persona.empleado.cod_empleado}  -  ${persona.empleado.departamento.nombre}</a></h4>
+    									<h4><a href="fichaTecnica?personaId=${p.id_persona}">${p.nombre}  -  ${p.apellido1}  -  ${p.empleado.cod_empleado}  -  ${p.empleado.departamento.nombre}</a></h4>
 					      			</div>
 							    </c:forEach>
 							</li>
