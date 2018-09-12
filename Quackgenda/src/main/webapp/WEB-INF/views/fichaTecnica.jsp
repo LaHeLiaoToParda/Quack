@@ -87,61 +87,94 @@
 							<table>
 
 									<tr>
-										<tdh>Nombre: </th>
+										<th>Nombre: </th>
+										<td><c:out value = "${persona.nombre}"/></td>
 									</tr>
 									<tr>
 										<th>Apellido 1: </th>
+										<td><c:out value = "${persona.apellido1}"/></td>
 									</tr>
 									<tr>
 										<th>Apellido 2: </th>
+										<td><c:out value = "${persona.apellido2}"/></td>
 									</tr>
 									<tr>
 										<th>DNI: </th>
+										<td><c:out value = "${persona.dni}"/></td>
 									</tr>
 									<tr>
 										<th>Fecha de Nacimiento: </th>
+										<td><c:out value = "${persona.fecha_nacimiento}"/></td>
 									</tr>
 									<tr>
 										<th>Codigo de Empleado: </th>
+										<td><c:out value = "${persona.empleado.cod_empleado}"/></td>
 									</tr>
 									<tr>
 										<th>Salario: </th>
+										<td><c:out value = "${persona.empleado.salario}"/></td>
 									</tr>
 									<tr>
 										<th>Fecha de alta: </th>
+										<td><c:out value = "${persona.empleado.fecha_alta}"/></td>
 									</tr>
 									<tr>
 										<th>Imagen: </th>
+										<td><c:out value = "${persona.empleado.imagen_empleado}"/></td>
 									</tr>
 									<tr>
 										<th>Categoria: </th>
+										<td><c:out value = "${persona.empleado.categoria.nombre}"/></td>
 									</tr>
 									<tr>
 										<th>Descripcion: </th>
+										<td><c:out value = "${persona.empleado.categoria.descripcion}"/></td>
 									</tr>
 									<tr>
 										<th>Nombre Departamento: </th>
+										<td><c:out value = "${persona.empleado.departamento.nombre}"/></td>
 									</tr>
 									<tr>
 										<th>Telefono: </th>
+										<td><c:forEach var="telefono"
+													items="${persona.telefonos}">
+													${telefono.telefono}<br />
+											</c:forEach></td>
 									</tr>
 									<tr>
 										<th>Direccion: </th>
+										<td><c:forEach var="direccion" items="${persona.direcciones}">
+												${direccion.direccion}
+											</c:forEach></td>
 									</tr>
 									<tr>
 										<th>Codigo Postal: </th>
+										<td><c:forEach var="direccion" items="${persona.direcciones}">
+												${direccion.cod_postal}
+											</c:forEach></td>
 									</tr>
 									<tr>
 										<th>Localidad: </th>
+										<td><c:forEach var="direccion" items="${persona.direcciones}">
+												${direccion.localidad}
+											</c:forEach></td>
 									</tr>
 									<tr>
 										<th>Provincia: </th>
+										<td><c:forEach var="direccion" items="${persona.direcciones}">
+												${direccion.provincia}
+											</c:forEach></td>
 									</tr>
 							
-									<c:out value = "${persona.nombre}"/>
-										<%-- <tr>
-											<td>${persona.nombre}</td>
-											<td>${personaId.apellido1}</td>
+											<%-- <td><c:out value = "${persona.empleado.cod_empleado}"/></td>
+											<td><c:out value = "${persona.empleado.salario}"/></td>
+											<td><c:out value = "${persona.empleado.fecha_alta}"/></td>
+											<td><c:out value = "${persona.imagen_empleado}"/></td>
+											<td><c:out value = "${persona.categoria.nombre}"/></td>
+											<td><c:out value = "${persona.categoria.descripcion}"/></td>
+											<td><c:out value = "${persona.departamento.nombre}"/></td> --%>
+											
+											<%-- <td>${personaId.apellido1}</td>
 											<td>${personaId.apellido2}</td>
 											<td>${personaId.dni}</td>
 											<td>${personaId.fecha_nacimiento}</td>
@@ -151,27 +184,8 @@
 											<td>${persona.empleado.imagen_empleado}</td>
 											<td>${personaId.empleado.categoria.nombre}</td>
 											<td>${personaId.empleado.categoria.descripcion}</td>
-											<td>${personaId.empleado.departamento.nombre}</td>
-											<td><c:forEach var="telefono"
-													items="${persona.telefonos}">
-													${telefono.telefono}<br />
-											</c:forEach></td>
-											<td><c:forEach var="direccion" items="${persona.direcciones}">
-												${direccion.direccion}
-											</c:forEach></td>
-											<td><c:forEach var="direccion" items="${persona.direcciones}">
-												${direccion.cod_postal}
-											</c:forEach></td>
-											<td><c:forEach var="direccion" items="${persona.direcciones}">
-												${direccion.localidad}
-											</c:forEach></td>
-											<td><c:forEach var="direccion" items="${persona.direcciones}">
-												${direccion.provincia}
-											</c:forEach></td>
-										</tr> --%>
-
-									<%-- </c:out> --%>
-
+											<td>${personaId.empleado.departamento.nombre}</td> --%>
+								
 
 								</table>
 						</li>
