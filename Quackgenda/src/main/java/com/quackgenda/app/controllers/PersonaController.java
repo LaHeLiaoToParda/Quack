@@ -22,7 +22,7 @@ public class PersonaController {
 	@RequestMapping(value="welcome", method=RequestMethod.GET)
 	public ModelAndView welcome() throws Exception {
 		logger.info("-- en welcome()");
-		ModelAndView model = new ModelAndView("test");
+		ModelAndView model = new ModelAndView("listado");
 		return model;
 	}
 	
@@ -36,4 +36,25 @@ public class PersonaController {
 		
 		return model;
 	}
+	
+	@RequestMapping(value="/listaEmpleados", method=RequestMethod.GET)
+	public ModelAndView welcome2() throws Exception {
+		logger.info("-- en listarEmpleados()");
+		ModelAndView model = new ModelAndView("listadoEmpleados");
+		
+		List<Persona>listaPersonas = serviciosPersona.listarTodos();
+		model.addObject("lista",listaPersonas);
+		return model;
+	}
+	
+	@RequestMapping(value="/Busqueda", method=RequestMethod.GET)
+	public ModelAndView busquedaCategoria() throws Exception {
+		logger.info("-- en listarEmpleados()");
+		ModelAndView model = new ModelAndView("listadoEmpleados");
+		
+		List<Persona>listaPersonas = serviciosPersona.listarTodos();
+		model.addObject("lista",listaPersonas);
+		return model;
+	}
+	
 }

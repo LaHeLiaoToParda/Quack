@@ -17,6 +17,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="stylesheet" href="../resources/css/style.css" />
 <script type="text/javascript" src="../resources/js/JFCore.js"></script>
 		
+			
+		
+		
 		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
 		<script type="text/javascript">
 			(function() {
@@ -77,7 +80,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     					</dl>
     					<ul>
     						<li class="active">
-    							<h1>Bienvenido</h1>
+    							<table border="1">
+									<tr>
+										<th>Nombre</th>
+										<th>apellido1</th>								
+										<th>codEmp</th>
+										<th>salario</th>
+										<th>Categoria</th>					
+										<th>Dept</th>
+									</tr>
+									<c:forEach var="persona" items="${lista}">
+										<tr>
+											<td>${persona.nombre}</td>
+											<td>${persona.apellido1}</td>
+											<td>${persona.empleado.cod_empleado}</td>
+											<td>${persona.empleado.salario}</td>
+											<td>${persona.empleado.categoria.nombre}</td>
+											<td>${persona.empleado.departamento.nombre}</td>
+										</tr>    	
+							    	<%-- <c:out value = "${persona.nombre}"/><br/> --%>
+							    	</c:forEach>
+								</table>
 			    				    <!-- <div class="form">		
 								        <input type="text" class="active textbox" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
 										<input type="text" class="textbox" value="Apellidos" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
