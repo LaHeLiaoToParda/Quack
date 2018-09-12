@@ -138,9 +138,9 @@
 										<th>Provincia: </th>
 									</tr>
 							
-									<c:out value = "${personaId}">
-										<tr>
-											<td>${personaId.nombre}</td>
+									<c:out value = "${persona.nombre}"/>
+										<%-- <tr>
+											<td>${persona.nombre}</td>
 											<td>${personaId.apellido1}</td>
 											<td>${personaId.apellido2}</td>
 											<td>${personaId.dni}</td>
@@ -148,11 +148,11 @@
 											<td>${personaId.empleado.cod_empleado}</td>
 											<td>${personaId.empleado.salario}</td>
 											<td>${personaId.empleado.fecha_alta}</td>
-											<td>${personaId.empleado.imagen_empleado}</td>
+											<td>${persona.empleado.imagen_empleado}</td>
 											<td>${personaId.empleado.categoria.nombre}</td>
 											<td>${personaId.empleado.categoria.descripcion}</td>
 											<td>${personaId.empleado.departamento.nombre}</td>
-										<%-- 	<td><c:forEach var="telefono"
+											<td><c:forEach var="telefono"
 													items="${persona.telefonos}">
 													${telefono.telefono}<br />
 											</c:forEach></td>
@@ -167,10 +167,10 @@
 											</c:forEach></td>
 											<td><c:forEach var="direccion" items="${persona.direcciones}">
 												${direccion.provincia}
-											</c:forEach></td> --%>
-										</tr>
+											</c:forEach></td>
+										</tr> --%>
 
-									</c:out>
+									<%-- </c:out> --%>
 
 
 								</table>
