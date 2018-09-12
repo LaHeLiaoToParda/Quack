@@ -194,7 +194,7 @@
 									<img src="../resources/images/f1.jpg" title="" alt="">
 								</div>
 								<div class="top-grid2">
-									<a href="listadoTest"><h4>
+									<a href="listaEmpleados"><h4>
 											Listar todos los empleados
 											<h4></h4></a>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
