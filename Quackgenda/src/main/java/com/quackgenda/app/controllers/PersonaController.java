@@ -22,7 +22,7 @@ public class PersonaController {
 	@RequestMapping(value="welcome", method=RequestMethod.GET)
 	public ModelAndView welcome() throws Exception {
 		logger.info("-- en welcome()");
-		ModelAndView model = new ModelAndView("listado");
+		ModelAndView model = new ModelAndView("welcome");
 		return model;
 	}
 	
