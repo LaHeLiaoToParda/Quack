@@ -38,7 +38,7 @@ public class QuackgendaApplicationTests {
 	
 	@Test
 	public void buscarPersona() {
-		List<Persona> lis = personaDao.buscarPersona(1);
+		Persona lis = personaDao.buscarPersona(1);
 		
 		Assert.assertNotNull("Prueba buscarPersona", lis);
 	}
