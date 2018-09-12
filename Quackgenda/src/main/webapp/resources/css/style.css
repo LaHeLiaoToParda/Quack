@@ -530,3 +530,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 .noMostrar {
 	display: none;
 }
+.tituloListado {
+	font-size: 40px;
+	text-decoration: underline;
+}
