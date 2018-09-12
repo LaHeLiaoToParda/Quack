@@ -2,6 +2,7 @@ package com.quackgenda.app;
 
 
 import java.util.Collection;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,11 +29,18 @@ public class QuackgendaApplicationTests {
 	@Test
 	public void listarTodo() {
 		
-		Collection<Persona> list = personaDao.listarTodos();
+		List<Persona> list = personaDao.listarTodos();
 		
 		Assert.assertNotNull("Prueba listarTodos", list);
 	
 		
+	}
+	
+	@Test
+	public void buscarPersona() {
+		List<Persona> lis = personaDao.buscarPersona(1);
+		
+		Assert.assertNotNull("Prueba buscarPersona", lis);
 	}
 
 }
