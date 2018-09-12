@@ -17,6 +17,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="stylesheet" href="../resources/css/style.css" />
 <script type="text/javascript" src="../resources/js/JFCore.js"></script>
 		
+			
+		
+		
 		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
 		<script type="text/javascript">
 			(function() {
@@ -77,21 +80,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     					</dl>
     					<ul>
     						<li class="active">
-			    				    <!-- <div class="form">		
-								        <input type="text" class="active textbox" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
-										<input type="text" class="textbox" value="Apellidos" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
-										<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-										
-										<input type="submit" value="Añadir empleado">
-							        </div> -->
-						        <div>"${textoPrueba}"</div>
+    							<h3>"${textoTitulo}"</h3>
+    							<c:forEach var="persona" items="${lista}">
+    								<div class="top-grid2">
+    									<h4><a href="fichaTecnica?id=${lista.persona.id_persona}">${persona.nombre}  -  ${persona.apellido1}  -  ${persona.empleado.cod_empleado}  -  ${persona.empleado.departamento.nombre}</a></h4>
+					      			</div>
+							    </c:forEach>
 							</li>
     						<li><div class="top-grids">
 					      			<div class="top-grid1">
 					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="listadoTest"><h4>Listar todos los empleados<h4></h4></a>
+						      			<a href="listaEmpleados"><h4>Listar todos los empleados<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">

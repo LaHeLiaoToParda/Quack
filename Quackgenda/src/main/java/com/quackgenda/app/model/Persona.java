@@ -1,11 +1,17 @@
 package com.quackgenda.app.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -31,7 +37,25 @@ public class Persona{
 	@JoinColumn(name = "id_empleado")
 	private Empleado empleado;
 
+	@OneToMany(mappedBy = "persona", cascade = CascadeType.ALL)
+	List<Direccion> direcciones = new ArrayList<>();
+
+	@OneToMany(mappedBy = "persona", cascade = CascadeType.ALL)
+	List<Telefono> telefonos = new ArrayList<>();
+
 	
+	public List<Direccion> getDirecciones() {
+		return direcciones;
+	}
+	public void setDirecciones(List<Direccion> direcciones) {
+		this.direcciones = direcciones;
+	}
+	public List<Telefono> getTelefonos() {
+		return telefonos;
+	}
+	public void setTelefonos(List<Telefono> telefonos) {
+		this.telefonos = telefonos;
+	}
 	//constructores//////////////////
 	public Persona() {	
 	}
