@@ -97,14 +97,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      				<img src="../resources/images/f2.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>Listar por departamento<h4></h4></a>
+						      			<a href="listaEmpleadosGroup?group=empleado.departamento.nombre"><h4>Listar por departamento<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
 					      				<img src="../resources/images/f3.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>Listar por categoria<h4></h4></a>
+						      			<a href="listadoEmpleadosGroup?group=empleado.categoria.nombre"><h4>Listar por categoria<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">

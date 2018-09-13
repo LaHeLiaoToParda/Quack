@@ -49,6 +49,17 @@ public class PersonaController {
 		return model;
 	}
 	
+	//metodo para listar todos los empleados agrupados
+		@RequestMapping(value="listaEmpleadosGroup", method=RequestMethod.GET)
+		public ModelAndView listarEmpleadosGroupBy(HttpServletRequest request) throws Exception {
+			logger.info("-- en listarEmpleados()");
+			ModelAndView model = new ModelAndView("listadoEmpleados");
+			String group = request.getParameter("group");
+			List<Persona>listaPersonas = serviciosPersona.listarTodosGroupBy(group);
+			model.addObject("lista",listaPersonas);
+			return model;
+		}
+	
 	//metodo busqueda
 	@RequestMapping(value="busqueda", method=RequestMethod.GET)
 	public ModelAndView busquedaCategoria() throws Exception {
