@@ -20,7 +20,7 @@ public class BackOfficeDAO implements IBackOfficeDAO{
 
 	@Transactional
 	public Persona consultarPersona(int dni) {
-		String hql = "FROM Persona WHERE id_persona="+dni;
+		String hql = "FROM Persona WHERE dni="+dni;
 		return (Persona) entityManager.createQuery(hql).getResultList().get(0);
 	}
 
