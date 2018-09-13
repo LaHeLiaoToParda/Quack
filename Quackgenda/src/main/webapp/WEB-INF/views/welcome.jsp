@@ -187,19 +187,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										        <input style="width: 80%" type="text" class="textbox" value="Apellido1" name="apellido1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido1';}">
 										        <input style="width: 80%" type="text" class="textbox" value="Apellido2" name="apellido2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido2';}">
 										        <input style="width: 80%" type="text" class="textbox" value="DNI" name="dni" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DNI';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Fecha nacimiento" name="fecha_nacimiento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Fecha_Nacimiento';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Codigo empleado" name="cod_empleado" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Salario" name="salario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Fecha alta" name="fecha_alta" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Categoria" name="nombre_categoria" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Descripcion" name="descripcion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Departamento" name="nombre_departamento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Telefono" name="telefono" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Direccion" name="direccion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Codigo Postal" name="cod_postal" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Localidad" name="localidad" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Provincia" name="provincia" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido';}">
-										        Selecciona una imagen para tu perfil: <input type="file" class="textbox" name="img" multiple name="imagen">
+										        <input style="width: 80%" type="text" class="textbox" value="Fecha nacimiento" name="fecha_nacimiento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Fecha Nacimiento';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Codigo empleado" name="cod_empleado" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Codigo empleado';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Salario" name="salario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Salario';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Fecha alta" name="fecha_alta" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Fecha alta';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Categoria" name="nombre_categoria" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Categoria';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Descripcion" name="descripcion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Descripcion';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Departamento" name="nombre_departamento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Departamento';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Telefono" name="telefono" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telefono';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Direccion" name="direccion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Direccion';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Codigo Postal" name="cod_postal" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Codigo Postal';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Localidad" name="localidad" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Localidad';}">
+										        <input style="width: 80%" type="text" class="textbox" value="Provincia" name="provincia" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Provincia';}">
+										        <input style="width: 80%" type="text" class="textbox" value="url Imagen" name="imagen_empleado" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imagen';}">
 									
 										        <input style="width: 80%" type="submit" value="Añadir empleado">
 										        </form>
