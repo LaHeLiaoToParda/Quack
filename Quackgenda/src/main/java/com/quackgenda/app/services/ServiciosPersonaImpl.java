@@ -29,7 +29,19 @@ public class ServiciosPersonaImpl implements IServiciosPersona {
 	public List<Persona> listarTodosGroupBy(String group) {
 		return personaDAO.listarTodosGroupBy(group);
 	}
-
+	
+	public List<Persona> mostrarCategoria(){
+		return personaDAO.mostrarCategoria();
+	}
+	
+	public List<Persona> busquedaPersonalizada(String tabla,String elem){
+		
+		return personaDAO.busquedaPersonalizada(tabla,elem);
+	}
+	
+	public List<Persona> mostrarDepartamento(){
+		return personaDAO.mostrarDepartamento();
+	}
 	
 	public List<Persona> buscarNombre(String nombre){
 		

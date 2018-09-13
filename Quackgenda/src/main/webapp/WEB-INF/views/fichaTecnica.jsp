@@ -301,61 +301,34 @@
 					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			-->
+					      		
 								<div class="top-grid2">
-									<a href="#single.html"><h4>
-											Búsqueda por ciudad
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
+									<h2>Busqueda Especial</h2><br>
+					    	
+					    			<form action="RecogerSelect" method="GET">
+									  <select name="opc" >
+									    <option >Seleccione Opcion:</option>
+									    <option >Nombre Empleado</option>
+									   
+									 
+									  </select>
+									  <input type="submit" value="Selecciona">
+									</form>
+									  
+									  <form action="RealizarConsulta" method="GET">
+										  <select name="opc2">
+										    <option value="0">Seleccione Opcion:</option>
+										    <c:forEach var="tabla" items="${lista}">
+												    	
+											<option> ${tabla.nombre}</option>
+								    		</c:forEach>
+										   
+							
+										  </select>
+										  <input type="submit" value="Buscar">
+									  </form>
 								</div>
-								<!--
-					      			 <div class="top-grid1">
-					      				<img src="../resources/images/f2.jpg" title="" alt="">
-					      			</div>
-					      			-->
-								<div class="top-grid2">
-									<a href="#single.html"><h4>
-											Búsqueda por código postal
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<!--
-					      			 <div class="top-grid1">
-					      				<img src="../resources/images/f3.jpg" title="" alt="">
-					      			</div>
-					      			-->
-								<div class="top-grid2">
-									<a href="#single.html"><h4>
-											Búsqueda por telefono
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<!--
-					      			 <div class="top-grid1">
-					      				<img src="../resources/images/f4.jpg" title="" alt="">
-					      			</div>
-					      			-->
-								<div class="top-grid2">
-									<a href="#single.html"><h4>
-											Búsqueda por categoría
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<!--
-					      			<div class="top-grid1">
-					      				<img src="../resources/images/f1.jpg" title="" alt="">
-					      			</div>
-					      			-->
-								<div class="top-grid2">
-									<a href="#single.html"><h4>
-											Búsqueda por departamento
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
+								
 							</div>
 							<div class="clear"></div>
 						</li>

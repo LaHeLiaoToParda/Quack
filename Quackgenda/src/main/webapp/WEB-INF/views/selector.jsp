@@ -134,20 +134,20 @@
 				<div class="tab style-1">
 					<dl>
 						<dd class="users">
-							<a class="user active" href="#tab1"> </a>
+							<a class="user" href="#tab1"> </a>
 						</dd>
 						<dd class="messages">
 							<a class="msg" href="#tab2"> </a>
 						</dd>
 						<dd class="likes">
-							<a class="like" href="#tab3"> </a>
+							<a class="like activate" href="#tab3"> </a>
 						</dd>
 						<dd class="settings">
 							<a class="setting" href="#tab4"> </a>
 						</dd>
 					</dl>
 					<ul>
-						<li class="active">
+						<li>
 							<div class="top-grids">
 								Bienvenido
 							</div>
@@ -188,10 +188,10 @@
       							</div>   		
 								<div class="clear"> </div>
 						</li>
-						<li>
+						<li class="active">
 							<div class="top-grids">
 								
-							  <div class="top-grid2">
+							<div class="top-grid2">
 								<h2>Busqueda Especial</h2><br>
 					    	
 					    			<form action="RecogerSelect" method="GET">

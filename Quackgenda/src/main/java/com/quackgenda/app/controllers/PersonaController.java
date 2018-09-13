@@ -92,6 +92,34 @@ public class PersonaController {
 		return model;
 	}
 	
+	@RequestMapping(value="/RecogerSelect", method=RequestMethod.GET)
+	public ModelAndView select(HttpServletRequest request) throws Exception {
+		logger.info("-- en select()");
+		String busqueda = request.getParameter("opc");
+		
+		ModelAndView model = new ModelAndView("selector");
+		
+		List<Persona>listaNombreCategoria = serviciosPersona.mostrarCategoria();
+		model.addObject("lista",listaNombreCategoria);
+		
+		
+		return model;
+	}
+	
+	
+	@RequestMapping(value="/RealizarConsulta", method=RequestMethod.GET)
+	public ModelAndView select2(HttpServletRequest request) throws Exception {
+		logger.info("-- en select()");
+		
+		String busqueda2 = request.getParameter("opc2");
+		
+		ModelAndView model = new ModelAndView("listadoEmpleados");
+		
+		List<Persona>lista = serviciosPersona.busquedaPersonalizada("nombre",busqueda2);
+		model.addObject("lista",lista);
+	
+		return model;
+	}
 	
 	
 }
