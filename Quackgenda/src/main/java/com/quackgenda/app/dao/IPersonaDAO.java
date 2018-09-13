@@ -13,7 +13,7 @@ public interface IPersonaDAO {
 	
 	List<Persona> mostrarCategoria();
 	
-    List<Persona> mostrarDepartamento();
+
 	
     List<Persona> busquedaPersonalizada(String tabla,String elem);
     

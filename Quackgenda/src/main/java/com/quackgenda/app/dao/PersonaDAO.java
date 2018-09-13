@@ -47,14 +47,7 @@ public class PersonaDAO implements IPersonaDAO {
 		return (List<Persona>) entityManager.createQuery(hql).getResultList();
 	}
 	
-	@SuppressWarnings("unchecked")
-	@Transactional
-	public List<Persona> mostrarDepartamento(){
-		
-		String hql = " FROM Departamento";
-		//String hql = " FROM '"+categoria+"'";
-		return (List<Persona>) entityManager.createQuery(hql).getResultList();
-	}
+	
 	
 	@SuppressWarnings("unchecked")
 	@Transactional

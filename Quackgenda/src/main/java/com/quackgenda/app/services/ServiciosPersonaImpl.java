@@ -39,9 +39,7 @@ public class ServiciosPersonaImpl implements IServiciosPersona {
 		return personaDAO.busquedaPersonalizada(tabla,elem);
 	}
 	
-	public List<Persona> mostrarDepartamento(){
-		return personaDAO.mostrarDepartamento();
-	}
+
 	
 	public List<Persona> buscarNombre(String nombre){
 		

@@ -99,8 +99,13 @@ public class PersonaController {
 		
 		ModelAndView model = new ModelAndView("selector");
 		
+	
+		request.setAttribute("titulo", busqueda); 
 		List<Persona>listaNombreCategoria = serviciosPersona.mostrarCategoria();
 		model.addObject("lista",listaNombreCategoria);
+		
+		
+		
 		
 		
 		return model;
@@ -111,8 +116,9 @@ public class PersonaController {
 	public ModelAndView select2(HttpServletRequest request) throws Exception {
 		logger.info("-- en select()");
 		
+		String busqueda = request.getParameter("opc1");
 		String busqueda2 = request.getParameter("opc2");
-		
+		System.out.println("*************"+busqueda+"***************************"+busqueda2);
 		ModelAndView model = new ModelAndView("listadoEmpleados");
 		
 		List<Persona>lista = serviciosPersona.busquedaPersonalizada("nombre",busqueda2);

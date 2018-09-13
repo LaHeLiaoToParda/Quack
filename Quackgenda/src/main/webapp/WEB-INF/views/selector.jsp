@@ -196,15 +196,15 @@
 					    	
 					    			<form action="RecogerSelect" method="GET">
 									  <select name="opc" >
-									    <option >Seleccione Opcion:</option>
-									    <option >Nombre Empleado</option>
+									   
+									    <option >${titulo}</option>
 									   
 									 
 									  </select>
 									  <input type="submit" value="Selecciona">
 									</form>
 									  
-									  <form action="RealizarConsulta" method="GET">
+									  <form action="RealizarConsulta?opc1=nombre" method="GET">
 										  <select name="opc2">
 										    <option value="0">Seleccione Opcion:</option>
 										    <c:forEach var="tabla" items="${lista}">

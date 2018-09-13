@@ -13,7 +13,6 @@ public interface IServiciosPersona {
 	
 	public List<Persona> buscarNombre(String nombre);
 	
-	public List<Persona> mostrarDepartamento();
 	
 	public List<Persona> busquedaPersonalizada(String tabla,String elem);
 	
