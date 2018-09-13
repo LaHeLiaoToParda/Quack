@@ -182,7 +182,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    							<a onclick="showHideAlta();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Alta empleado</h5></a>
 	    							    <div id="alta" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
 	    							        <div class="form">	
-	    							     		<form action=""  method="POST">
+	    							     		<form action="ControllerTest"  method="POST">
 								                <input style="width: 80%" type="text" class="textbox"  value="Nombre" name="nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
 										        <input style="width: 80%" type="text" class="textbox" value="Apellido1" name="apellido1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido1';}">
 										        <input style="width: 80%" type="text" class="textbox" value="Apellido2" name="apellido2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido2';}">
