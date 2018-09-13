@@ -38,6 +38,12 @@ public class Categoria {
 	public void setId_categoria(int id_categoria) {
 		this.id_categoria = id_categoria;
 	}
+	public Empleado getEmpleado() {
+		return empleado;
+	}
+	public void setEmpleado(Empleado empleado) {
+		this.empleado = empleado;
+	}
 	public String getNombre() {
 		return nombre;
 	}

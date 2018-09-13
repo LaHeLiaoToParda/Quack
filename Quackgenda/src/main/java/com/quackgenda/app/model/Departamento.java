@@ -41,6 +41,12 @@ public class Departamento {
 	public String getNombre() {
 		return nombre;
 	}
+	public Empleado getEmpleado() {
+		return empleado;
+	}
+	public void setEmpleado(Empleado empleado) {
+		this.empleado = empleado;
+	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
