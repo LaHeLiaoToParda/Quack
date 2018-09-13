@@ -26,6 +26,7 @@ public class BackOfficeController {
   		logger.info("-- en consulta()");
   		ModelAndView model = new ModelAndView("welcome");
   		int personaDNI = Integer.parseInt(request.getParameter("personaDNI"));
+  		System.out.println(personaDNI + "**********************************************************************************************************");
   		Persona persona = serviciosBackOffice.consultarPersona(personaDNI);
   		model.addObject("persona",persona);
 		return model;
