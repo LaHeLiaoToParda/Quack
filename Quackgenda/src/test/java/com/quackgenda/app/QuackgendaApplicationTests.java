@@ -38,7 +38,7 @@ public class QuackgendaApplicationTests {
 	@Test
 	public void buscarPersona() {
 		Persona lis = personaDao.buscarPersona(1);
-		
+	
 		Assert.assertNotNull("Error buscarPersona", lis);
 	}
 
