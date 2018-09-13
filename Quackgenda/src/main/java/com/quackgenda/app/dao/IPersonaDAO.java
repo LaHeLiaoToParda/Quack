@@ -9,5 +9,7 @@ public interface IPersonaDAO {
 
 	Persona buscarPersona(int id);
 
+	List<Persona> buscarNombre(String nombre);
+	
 	List<Persona> listarTodosGroupBy(String group);
 }

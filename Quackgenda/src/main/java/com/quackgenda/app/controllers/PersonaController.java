@@ -79,6 +79,19 @@ public class PersonaController {
   		Persona persona = serviciosPersona.buscarPersona(personaId);
   		model.addObject("persona",persona);
 		return model;
+		
+	//metodo para recoger texto de la barra y buscarlo en la base de datos
+	}@RequestMapping(value="/BarraBusqueda", method=RequestMethod.GET)
+	public ModelAndView busquedaCategoria(HttpServletRequest request) throws Exception {
+		logger.info("-- en listarEmpleados()");
+		String busqueda = request.getParameter("search");
+		ModelAndView model = new ModelAndView("listadoEmpleados");
+		
+		List<Persona>listaPersonas = serviciosPersona.buscarNombre(busqueda);
+		model.addObject("lista",listaPersonas);
+		return model;
 	}
+	
+	
 	
 }

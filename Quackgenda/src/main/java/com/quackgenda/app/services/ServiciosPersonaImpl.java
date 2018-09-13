@@ -31,4 +31,9 @@ public class ServiciosPersonaImpl implements IServiciosPersona {
 	}
 
 	
+	public List<Persona> buscarNombre(String nombre){
+		
+		return personaDAO.buscarNombre(nombre);
+	}
+	
 }

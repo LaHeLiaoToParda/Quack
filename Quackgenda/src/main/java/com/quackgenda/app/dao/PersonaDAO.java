@@ -28,6 +28,15 @@ public class PersonaDAO implements IPersonaDAO {
 		String hql = "FROM Persona WHERE id_persona="+id;
 		return (Persona) entityManager.createQuery(hql).getResultList().get(0);
 	}
+	
+	@SuppressWarnings("unchecked")
+	@Transactional
+	public List<Persona> buscarNombre(String nombre){
+		
+		String hql = "FROM Persona where nombre ='"+nombre+"'";
+		return (List<Persona>) entityManager.createQuery(hql).getResultList();
+				
+	}
 
 	@Transactional
 	public List<Persona> listarTodosGroupBy(String group) {

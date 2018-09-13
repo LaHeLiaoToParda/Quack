@@ -10,4 +10,6 @@ public interface IServiciosPersona {
 	public Persona buscarPersona(int id);
 	
 	public List<Persona> listarTodosGroupBy(String group);
+	
+	public List<Persona> buscarNombre(String nombre);
 }

@@ -67,6 +67,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </head>
 <body>
+
+<div class="container-1">
+	      <span class="icon"><i class="fa fa-search"></i></span>
+	      <form action="BarraBusqueda" method="GET">
+	      		<input type="search"  name="search" id="search" placeholder="Search..." />
+	      </form>
+	  </div>
 <div class="wrap">
 <!-- tab style-1 -->
 <div class="row">
