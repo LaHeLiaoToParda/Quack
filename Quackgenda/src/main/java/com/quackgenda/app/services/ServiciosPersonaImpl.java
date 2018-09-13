@@ -25,5 +25,10 @@ public class ServiciosPersonaImpl implements IServiciosPersona {
 		return personaDAO.buscarPersona(id);
 	}
 
+
+	public List<Persona> listarTodosGroupBy(String group) {
+		return personaDAO.listarTodosGroupBy(group);
+	}
+
 	
 }

@@ -8,4 +8,6 @@ public interface IPersonaDAO {
 	List<Persona> listarTodos();
 
 	Persona buscarPersona(int id);
+
+	List<Persona> listarTodosGroupBy(String group);
 }
