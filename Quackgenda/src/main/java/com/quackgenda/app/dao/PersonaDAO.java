@@ -32,7 +32,7 @@ public class PersonaDAO implements IPersonaDAO {
 
 	@Transactional
 	public List<Persona> listarTodosGroupBy(String group) {
-		String hql = "FROM Persona GROUP BY " + group + " ORDER BY " + group;
+		String hql = "FROM Persona GROUP BY " + group;
 		return entityManager.createQuery(hql).getResultList();
 	}
 

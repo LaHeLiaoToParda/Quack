@@ -84,41 +84,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     								<div class="tituloListado">Listado de Empleados</div><br/>
     								<c:forEach var="p" items="${lista}">
     									<div class="top-grid2">
-    										<a href="fichaTecnica?personaId=${p.id_persona}"><h4>${p.nombre}   -   ${p.apellido1}   -    ${p.empleado.cod_empleado}</h4>
-    										<p>${p.empleado.departamento.nombre}   -   ${p.empleado.categoria.nombre} </p>
+    										<a href="fichaTecnica?personaId=${p.id_persona}"><h4>${p.nombre}   -   ${p.apellido1}   -   ${p.empleado.cod_empleado}</h4>
+    										<p>Dpto: ${p.empleado.departamento.nombre} &nbsp;&nbsp; - &nbsp;&nbsp; Categ: ${p.empleado.categoria.nombre} </p>
     										</a>
     									</div>
 							    	</c:forEach>	
 							    </div>
 							    <div class="clear"> </div>
 							</li>
-    						<li><div class="top-grids">
+    						<li>
+    							<div class="top-grids">
 					      			<div class="top-grid1">
 					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="listaEmpleados"><h4>Listar todos los empleados</h4></a>
+						      			<a href="listaEmpleados"><h4>Listar todos los empleados<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
 					      				<img src="../resources/images/f2.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>Listar por departamento</h4></a>
+						      			<a href="listaEmpleadosGroup?group=empleado.departamento.nombre"><h4>Listar por departamento<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
 					      				<img src="../resources/images/f3.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>Listar por categoria</h4></a>
+						      			<a href="listaEmpleadosGroup?group=empleado.categoria.nombre"><h4>Listar por categoria<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
 					      			 <div class="top-grid1">
 					      				<img src="../resources/images/f4.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
-						      			<a href="#single.html"><h4>Listar por nombre</h4></a>
+						      			<a href="listaEmpleadosGroup?group=nombre"><h4>Listar por nombre<h4></h4></a>
+						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					      			</div>
+					      			<div class="top-grid1">
+					      				<img src="../resources/images/f4.jpg" title="" alt="">
+					      			</div>
+					      			<div class="top-grid2">
+						      			<a href="listaEmpleadosGroup?group=empleado.cod_empleado"><h4>Listar por codigo de empleado<h4></h4></a>
 						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 					      			</div>
       							</div>   		
