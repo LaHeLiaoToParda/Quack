@@ -24,9 +24,8 @@ public class BackOfficeController {
 	@RequestMapping(value="consulta", method=RequestMethod.GET)
 	public ModelAndView consulta(HttpServletRequest request) throws Exception {
   		logger.info("-- en consulta()");
-  		ModelAndView model = new ModelAndView("welcome");
+  		ModelAndView model = new ModelAndView("fichaTecnica");
   		int personaDNI = Integer.parseInt(request.getParameter("personaDNI"));
-  		System.out.println(personaDNI + "**********************************************************************************************************");
   		Persona persona = serviciosBackOffice.consultarPersona(personaDNI);
   		model.addObject("persona",persona);
 		return model;

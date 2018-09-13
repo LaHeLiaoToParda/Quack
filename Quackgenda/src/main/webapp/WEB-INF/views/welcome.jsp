@@ -1,12 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -87,63 +84,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</dl>
 					<ul>
 						<li class="active">
-							
+							<div class="top-grids">
+								Bienvenido
+							</div>
+							<div class="clear"></div>
 						</li>
 						<li>
 							<div class="top-grids">
-								<div class="top-grid1">
-									<img src="../resources/images/f1.jpg" title="" alt="">
-								</div>
-								<div class="top-grid2">
-									<a href="listaEmpleados"><h4>
-											Listar todos los empleados
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<div class="top-grid1">
-									<img src="../resources/images/f2.jpg" title="" alt="">
-								</div>
-								<div class="top-grid2">
-									<a
-										href="listaEmpleadosGroup?group=empleado.departamento.nombre"><h4>
-											Listar por departamento
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<div class="top-grid1">
-									<img src="../resources/images/f3.jpg" title="" alt="">
-								</div>
-								<div class="top-grid2">
-									<a href="listaEmpleadosGroup?group=empleado.categoria.nombre"><h4>
-											Listar por categoria
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<div class="top-grid1">
-									<img src="../resources/images/f4.jpg" title="" alt="">
-								</div>
-								<div class="top-grid2">
-									<a href="listaEmpleadosGroup?group=nombre"><h4>
-											Listar por nombre
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-								<div class="top-grid1">
-									<img src="../resources/images/f4.jpg" title="" alt="">
-								</div>
-								<div class="top-grid2">
-									<a href="listaEmpleadosGroup?group=empleado.cod_empleado"><h4>
-											Listar por codigo de empleado
-											<h4></h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit, sed do eiusmod tempor incididunt</p>
-								</div>
-							</div>
-							<div class="clear"></div>
+					      			<div class="top-grid1">
+					      				<img src="../resources/images/f1.jpg" title="" alt="">
+					      			</div>
+					      			<div class="top-grid2">
+						      			<a href="listaEmpleados"><h4>Listar todos los empleados<h4></h4></a>
+						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					      			</div>
+					      			 <div class="top-grid1">
+					      				<img src="../resources/images/f2.jpg" title="" alt="">
+					      			</div>
+					      			<div class="top-grid2">
+						      			<a href="listaEmpleadosGroup?group=empleado.departamento.nombre"><h4>Listar por departamento<h4></h4></a>
+						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					      			</div>
+					      			 <div class="top-grid1">
+					      				<img src="../resources/images/f3.jpg" title="" alt="">
+					      			</div>
+					      			<div class="top-grid2">
+						      			<a href="listaEmpleadosGroup?group=empleado.categoria.nombre"><h4>Listar por categoria<h4></h4></a>
+						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					      			</div>
+					      			 <div class="top-grid1">
+					      				<img src="../resources/images/f4.jpg" title="" alt="">
+					      			</div>
+					      			<div class="top-grid2">
+						      			<a href="listaEmpleadosGroup?group=nombre"><h4>Listar por nombre<h4></h4></a>
+						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					      			</div>
+					      			<div class="top-grid1">
+					      				<img src="../resources/images/f4.jpg" title="" alt="">
+					      			</div>
+					      			<div class="top-grid2">
+						      			<a href="listaEmpleadosGroup?group=empleado.cod_empleado"><h4>Listar por codigo de empleado<h4></h4></a>
+						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+					      			</div>
+      							</div>   		
+								<div class="clear"> </div>
 						</li>
 						<li>
 							<div class="top-grids">
@@ -212,118 +196,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</li>
 						<li>
 							<div class="settings">
-								<a onclick="showHideConsultar();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Consultar empleado</h5></a>
-
-
-								<div id="consultar" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
-									<form action="consulta" method="get">
-									<input style="width: 80%" type="text" class="textbox" value="personaDNI" name="personaDNI" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'personaDNI';}">
-									<input style="width: 80%" type="submit" value="consulta">
-									</form>	
-									
-									
-								<li class="active">
-								<div>
-								<table class="tablaFichaTecnica">
-								<tr>
-									<th>Nombre:</th>
-									<td><c:out value="${persona.nombre}" /></td>
-								</tr>
-								<tr>
-									<th>Apellido 1:</th>
-									<td><c:out value="${persona.apellido1}" /></td>
-								</tr>
-								<tr>
-									<th>Apellido 2:</th>
-									<td><c:out value="${persona.apellido2}" /></td>
-								</tr>
-								<tr>
-									<th>DNI:</th>
-									<td><c:out value="${persona.dni}" /></td>
-								</tr>
-								<tr>
-									<th>Fecha de Nacimiento:</th>
-									<td><c:out value="${persona.fecha_nacimiento}" /></td>
-								</tr>
-								<tr>
-									<th>Codigo de Empleado:</th>
-									<td><c:out value="${persona.empleado.cod_empleado}" /></td>
-								</tr>
-								<tr>
-									<th>Salario:</th>
-									<td><c:out value="${persona.empleado.salario}" /></td>
-								</tr>
-								<tr>
-									<th>Fecha de alta:</th>
-									<td><c:out value="${persona.empleado.fecha_alta}" /></td>
-								</tr>
-								<tr>
-									<th>Imagen:</th>
-									<td><c:out value="${persona.empleado.imagen_empleado}" /></td>
-								</tr>
-								<tr>
-									<th>Categoria:</th>
-									<td><c:out value="${persona.empleado.categoria.nombre}" /></td>
-								</tr>
-								<tr>
-									<th>Descripcion:</th>
-									<td><c:out
-											value="${persona.empleado.categoria.descripcion}" /></td>
-								</tr>
-								<tr>
-									<th>Nombre Departamento:</th>
-									<td><c:out value="${persona.empleado.departamento.nombre}" /></td>
-								</tr>
-								<tr>
-									<th>Telefono:</th>
-									<td><c:forEach var="telefono" items="${persona.telefonos}">
-													${telefono.telefono}<br />
-										</c:forEach></td>
-								</tr>
-								<tr>
-									<th>Direccion:</th>
-									<td>
-										<c:forEach var="direccion" items="${persona.direcciones}">
-												${direccion.direccion}
-										</c:forEach>
-									</td>
-								</tr>
-								<tr>
-									<th>Codigo Postal:</th>
-									<td>
-										<c:forEach var="direccion"
-											items="${persona.direcciones}">
-											${direccion.cod_postal}
-										</c:forEach>
-									</td>
-								</tr>
-								<tr>
-									<th>Localidad:</th>
-									<td>
-										<c:forEach var="direccion"
-											items="${persona.direcciones}">
-											${direccion.localidad}
-										</c:forEach>
-									</td>
-								</tr>
-								<tr>
-									<th>Provincia:</th>
-									<td>
-										<c:forEach var="direccion" items="${persona.direcciones}">
-											${direccion.provincia}
-										</c:forEach>
-									</td>
-								</tr>
-							
-							</table>
-							</div>
-							<div class="clear"></div>
-						</li>
-								</div>
-								
-								
-
-
+								<a onclick="showHideConsultar();" href="#single.html"><h5>
+										<img src="../resources/images/arrow1.png" title="" alt="">Consultar
+										empleado
+									</h5></a>
+									<div id="consultar" class="noMostrar">
+										<table class="tablaFicha">
+										<form action="consulta" method="get">
+											<tr>
+												<td><input placeholder="Dni del empleado" value="" name="personaDNI"></td>
+												<td><input type="submit"></td>
+											</tr>
+										</form>
+									</table>	
+									</div>
 								<a onclick="showHideAlta();" href="#single.html"><h5>
 										<img src="../resources/images/arrow1.png" title="" alt="">Alta
 										empleado
@@ -331,75 +217,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div id="alta" class="noMostrar"
 									style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
 									<div class="form">
-										<form action="ControllerTest" method="POST">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Nombre" name="nombre" onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Nombre';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Apellido1" name="apellido1"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Apellido1';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Apellido2" name="apellido2"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Apellido2';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="DNI" name="dni" onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'DNI';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Fecha nacimiento" name="fecha_nacimiento"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Fecha Nacimiento';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Codigo empleado" name="cod_empleado"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Codigo empleado';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Salario" name="salario" onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Salario';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Fecha alta" name="fecha_alta"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Fecha alta';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Categoria" name="nombre_categoria"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Categoria';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Descripcion" name="descripcion"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Descripcion';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Departamento" name="nombre_departamento"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Departamento';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Telefono" name="telefono" onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Telefono';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Direccion" name="direccion"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Direccion';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Codigo Postal" name="cod_postal"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Codigo Postal';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Localidad" name="localidad"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Localidad';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="Provincia" name="provincia"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Provincia';}">
-											<input style="width: 80%" type="text" class="textbox"
-												value="url Imagen" name="imagen_empleado"
-												onfocus="this.value = '';"
-												onblur="if (this.value == '') {this.value = 'Imagen';}">
+										<input style="width: 80%" type="text" class="active textbox"
+											value="Nombre" onfocus="this.value = '';"
+											onblur="if (this.value == '') {this.value = 'Nombre';}">
+										<input style="width: 80%" type="text" class="textbox"
+											value="Apellidos" onfocus="this.value = '';"
+											onblur="if (this.value == '') {this.value = 'Apellido';}">
+										<input style="width: 80%" type="text" class="textbox"
+											value="Email" onfocus="this.value = '';"
+											onblur="if (this.value == '') {this.value = 'Email';}">
 
-											<input style="width: 80%" type="submit"
-												value="Añadir empleado">
-										</form>
+										<input style="width: 80%" type="submit"
+											value="Añadir empleado">
 									</div>
 								</div>
 								<a onclick="showHideModificar();" href="#single.html"><h5>
