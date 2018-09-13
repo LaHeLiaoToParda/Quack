@@ -1,7 +1,6 @@
 package com.quackgenda.app;
 
 
-import java.util.Collection;
 import java.util.List;
 
 import org.junit.Test;
@@ -31,16 +30,16 @@ public class QuackgendaApplicationTests {
 		
 		List<Persona> list = personaDao.listarTodos();
 		
-		Assert.assertNotNull("Prueba listarTodos", list);
+		Assert.assertNotNull("Error listado", list);
 	
 		
 	}
-	
+	//Prueba unitaria para el método buscarPersona()
 	@Test
 	public void buscarPersona() {
 		Persona lis = personaDao.buscarPersona(1);
 		
-		Assert.assertNotNull("Prueba buscarPersona", lis);
+		Assert.assertNotNull("Error buscarPersona", lis);
 	}
 
 }
