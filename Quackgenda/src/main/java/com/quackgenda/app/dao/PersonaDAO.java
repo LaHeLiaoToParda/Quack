@@ -16,7 +16,6 @@ public class PersonaDAO implements IPersonaDAO {
 	public PersonaDAO() {
 		
 	}
-
 	
 	@Transactional
 	public List<Persona> listarTodos() {
