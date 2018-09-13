@@ -202,13 +202,13 @@
 									</h5></a>
 									<div id="consultar" class="noMostrar">
 										<table class="tablaFicha">
-										<form action="consulta" method="get">
-											<tr>
-												<td><input placeholder="Dni del empleado" value="" name="personaDNI"></td>
-												<td><input type="submit"></td>
-											</tr>
-										</form>
-									</table>	
+											<form action="consulta" method="get">
+												<tr>
+													<td><input placeholder="Dni del empleado" value="" name="personaDNI"></td>
+													<td><input type="submit"></td>
+												</tr>
+											</form>
+										</table>	
 									</div>
 								<a onclick="showHideAlta();" href="#single.html"><h5>
 										<img src="../resources/images/arrow1.png" title="" alt="">Alta

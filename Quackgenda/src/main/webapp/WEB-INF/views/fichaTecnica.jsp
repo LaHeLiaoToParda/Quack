@@ -308,9 +308,16 @@
 										<img src="../resources/images/arrow1.png" title="" alt="">Consultar
 										empleado
 									</h5></a>
-								<div id="consultar" class="noMostrar"
-									style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">div
-									que se despliega al pulsar consultar empleado.</div>
+								<div id="consultar" class="noMostrar">
+										<table class="tablaFicha">
+											<form action="consulta" method="get">
+												<tr>
+													<td><input placeholder="Dni del empleado" value="" name="personaDNI"></td>
+													<td><input type="submit"></td>
+												</tr>
+											</form>
+										</table>	
+									</div>
 								<a onclick="showHideAlta();" href="#single.html"><h5>
 										<img src="../resources/images/arrow1.png" title="" alt="">Alta
 										empleado
