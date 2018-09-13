@@ -191,65 +191,108 @@
 						</li>
 						<li>
 							<div class="settings">
-								<a onclick="showHideConsultar();" href="#single.html"><h5>
-										<img src="../resources/images/arrow1.png" title="" alt="">Consultar
-										empleado
-									</h5></a>
-									<div id="consultar" class="noMostrar">
-										<table class="tablaFicha">
-											<form action="consulta" method="get">
+								<a onclick="showHideConsultar();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Consultar empleado</h5></a>
+								<div id="consultar" class="noMostrar">
+									<table class="tablaFicha">
+										<form action="consulta" method="get">
+											<tr>
+												<td><input type="text" class="textbox" value="DNI del empleado" name="personaDNI" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DNI del empleado';}"></td>
+												<td><input type="submit"></td>
+											</tr>
+										</form>
+									</table>	
+								</div>
+								<a onclick="showHideAlta();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Alta empleado</h5></a>
+								<div id="alta" class="noMostrar">
+									<table class="tablaFicha">
+										<tr>
+											<td>Nombre:</td>
+											<td><input type="text" class="textbox" value="Nombre" name="nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}"></td>
+										</tr>
+										<tr>
+											<td>Apellido1:</td>
+											<td><input type="text" class="textbox" value="Apellido1" name="apellido1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido1';}"></td>
+										</tr>
+										<tr>
+											<td>Apellido2:</td>
+											<td><input type="text" class="textbox" value="Apellido2" name="apellido2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido2';}"></td>
+										</tr>
+										<tr>
+											<td>DNI:</td>
+											<td><input type="text" class="textbox" value="DNI" name="dni" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DNI';}"></td>
+										</tr>
+										<tr>
+											<td>Fecha nacimiento:</td>
+											<td><input type="text" class="textbox" value="Fecha nacimiento" name="fecha_nacimiento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Fecha Nacimiento';}"></td>
+										</tr>
+										<tr>
+											<td>Codigo empleado:</td>
+											<td><input type="text" class="textbox" value="Codigo empleado" name="cod_empleado" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Codigo empleado';}"></td>
+										</tr>
+										<tr>
+											<td>Salario:</td>
+											<td><input type="text" class="textbox" value="Salario" name="salario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Salario';}"></td>
+										</tr>
+										<tr>
+											<td>Fecha alta:</td>
+											<td><input type="text" class="textbox" value="Fecha alta" name="fecha_alta" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Fecha alta';}"></td>
+										</tr>
+										<tr>
+											<td>Categoria:</td>
+											<td><input type="text" class="textbox" value="Categoria" name="nombre_categoria" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Categoria';}"></td>
+										</tr>
+										<tr>
+											<td>Descripcion:</td>
+											<td><input type="text" class="textbox" value="Descripcion" name="descripcion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Descripcion';}"></td>
+										</tr>
+										<tr>
+											<td>Departamento:</td>
+											<td><input type="text" class="textbox" value="Departamento" name="nombre_departamento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Departamento';}"></td>
+										</tr>
+										<tr>
+											<td>Telefono:</td>
+											<td><input type="text" class="textbox" value="Telefono" name="telefono" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telefono';}"></td>
+										</tr>
+										<tr>
+											<td>Direccion:</td>
+											<td><input type="text" class="textbox" value="Direccion" name="direccion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Direccion';}"></td>
+										</tr>
+										<tr>
+											<td>Codigo Postal:</td>
+											<td><input type="text" class="textbox" value="Codigo Postal" name="cod_postal" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Codigo Postal';}"></td>
+										</tr>
+										<tr>
+											<td>Localidad:</td>
+											<td><input type="text" class="textbox" value="Localidad" name="localidad" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Localidad';}"></td>
+										</tr>
+										<tr>
+											<td>Provincia:</td>
+											<td><input type="text" class="textbox" value="Provincia" name="provincia" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Provincia';}"></td>
+										</tr>
+										<tr>
+											<td>URL imagen empleado:</td>
+											<td><input type="text" class="textbox" value="url Imagen" name="imagen_empleado" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imagen';}"></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td><input type="submit" value="Añadir empleado"></td>
+										</tr>
+									</table>	
+								</div>
+														             
+								<a onclick="showHideModificar();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Modificar empleado</h5></a>
+								<div id="modificar" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">Div modificacion empleado</div>
+								<a onclick="showHideBaja();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="" >Baja empleado</h5></a>
+	    							<div id="baja" class="noMostrar">
+	    								<table class="tablaFicha">
+											<form action="" method="get">
 												<tr>
-													<td><input placeholder="Dni del empleado" value="" name="personaDNI"></td>
+													<td><input value="DNI del empleado" name="personaDNI" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DNI del empleado';}"></td>
 													<td><input type="submit"></td>
 												</tr>
 											</form>
-										</table>	
-									</div>
-								<a onclick="showHideAlta();" href="#single.html"><h5>
-										<img src="../resources/images/arrow1.png" title="" alt="">Alta
-										empleado
-									</h5></a>
-								<div id="alta" class="noMostrar"
-									style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">
-									<div class="form">
-										<form action="ControllerTest"  method="POST">
-								                <input style="width: 80%" type="text" class="textbox"  value="Nombre" name="nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Apellido1" name="apellido1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido1';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Apellido2" name="apellido2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Apellido2';}">
-										        <input style="width: 80%" type="text" class="textbox" value="DNI" name="dni" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DNI';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Fecha nacimiento" name="fecha_nacimiento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Fecha Nacimiento';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Codigo empleado" name="cod_empleado" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Codigo empleado';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Salario" name="salario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Salario';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Fecha alta" name="fecha_alta" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Fecha alta';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Categoria" name="nombre_categoria" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Categoria';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Descripcion" name="descripcion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Descripcion';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Departamento" name="nombre_departamento" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Departamento';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Telefono" name="telefono" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telefono';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Direccion" name="direccion" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Direccion';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Codigo Postal" name="cod_postal" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Codigo Postal';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Localidad" name="localidad" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Localidad';}">
-										        <input style="width: 80%" type="text" class="textbox" value="Provincia" name="provincia" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Provincia';}">
-										        <input style="width: 80%" type="text" class="textbox" value="url Imagen" name="imagen_empleado" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Imagen';}">
-									
-										        <input style="width: 80%" type="submit" value="Añadir empleado">
-										        </form>
-
-										
-									</div>
-								</div>
-								<a onclick="showHideModificar();" href="#single.html"><h5>
-										<img src="../resources/images/arrow1.png" title="" alt="">Modificar
-										empleado
-									</h5></a>
-								<div id="modificar" class="noMostrar"
-									style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">consultar</div>
-								<a onclick="showHideBaja();" href="#single.html"><h5>
-										<img src="../resources/images/arrow1.png" title="" alt="">Baja
-										empleado
-									</h5></a>
-								<div id="baja" class="noMostrar"
-									style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">baja</div>
-							</div>
+										</table>
+	    							</div>
 						</li>
 					</ul>
 				</div>
