@@ -19,14 +19,14 @@ public class BackOfficeDAO implements IBackOfficeDAO{
 	}
 
 	@Transactional
-	public Persona consultarPersona(int dni) {
-		String hql = "FROM Persona WHERE dni="+dni;
+	public Persona consultarPersona(String dni) {
+		String hql = "FROM Persona WHERE dni=" + "'" + dni + "'";
 		return (Persona) entityManager.createQuery(hql).getResultList().get(0);
 	}
 
 	@Transactional
-	public void eliminiarPersona(int dni) {
-		String hql = "DELETE Persona WHERE dni="+dni;
+	public void eliminiarPersona(String dni) {
+		String hql = "DELETE Persona WHERE dni=" + "'" + dni + "'";
 		entityManager.createQuery(hql);
 	}
 

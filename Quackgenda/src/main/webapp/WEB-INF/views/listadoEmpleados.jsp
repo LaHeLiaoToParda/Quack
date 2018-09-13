@@ -208,7 +208,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    							<a onclick="showHideModificar();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Modificar empleado</h5></a>
 	    							    <div id="modificar" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">consultar</div>
 	    							<a onclick="showHideBaja();" href="#single.html"><h5><img src="../resources/images/arrow1.png" title="" alt="">Baja empleado</h5></a>
-	    							    <div id="baja" class="noMostrar" style="background-color: aliceblue; border: 1px solid grey; border-radius: 4px 4px 0px 0px;">baja</div>
+	    							    <div id="baja" class="noMostrar">
+	    							    	<table class="tablaFicha">
+												<form action="eliminar" method="get">
+													<tr>
+														<td><input placeholder="Dni del empleado" value="" name="personaDNI"></td>
+														<td><input type="submit"></td>
+													</tr>
+												</form>
+											</table>
+	    							    </div>
     							</div>
     						</li>
     					</ul>

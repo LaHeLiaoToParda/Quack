@@ -17,16 +17,16 @@ public class BackOfficeService implements IBackOfficeService{
 	private IBackOfficeDAO BackOfficeDAO;
 
 	
-	public Persona consultarPersona(int dni) {
-		
+	public Persona consultarPersona(String dni) {
 		return BackOfficeDAO.consultarPersona(dni);
 	}
 
 
-	public void eliminiarPersona(int dni) {
-		
-		BackOfficeDAO.eliminiarPersona(dni);
+	public void eliminiarPersona(String dni) {
+//		BackOfficeDAO.eliminiarPersona(dni);
+
 	}
+	
 	
 	
 	

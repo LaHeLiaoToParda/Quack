@@ -4,8 +4,8 @@ import com.quackgenda.app.model.Persona;
 
 public interface IBackOfficeDAO {
 
-	public Persona consultarPersona(int dni);
+	public Persona consultarPersona(String dni);
 
-	public void eliminiarPersona(int dni);
+	public void eliminiarPersona(String dni);
 
 }

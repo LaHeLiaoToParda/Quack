@@ -25,7 +25,7 @@ public class BackOfficeController {
 	public ModelAndView consulta(HttpServletRequest request) throws Exception {
   		logger.info("-- en consulta()");
   		ModelAndView model = new ModelAndView("fichaTecnica");
-  		int personaDNI = Integer.parseInt(request.getParameter("personaDNI"));
+  		String personaDNI = request.getParameter("personaDNI");
   		Persona persona = serviciosBackOffice.consultarPersona(personaDNI);
   		model.addObject("persona",persona);
 		return model;
@@ -34,9 +34,9 @@ public class BackOfficeController {
 	@RequestMapping(value="eliminar", method=RequestMethod.GET)
 	public ModelAndView eliminar(HttpServletRequest request) throws Exception {
   		logger.info("-- en eliminar()");
-  		ModelAndView model = new ModelAndView("welcome");
-  		int personaDNI = Integer.parseInt(request.getParameter("personaDNI"));
-  		serviciosBackOffice.consultarPersona(personaDNI);
+  		ModelAndView model = new ModelAndView("listadoEmpleados");
+  		String personaDNI = request.getParameter("personaDNI");
+  		serviciosBackOffice.eliminiarPersona(personaDNI);
 		return model;
 	}
 
