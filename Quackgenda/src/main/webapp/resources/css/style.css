@@ -526,20 +526,42 @@ body{
 	text-decoration: underline;
 	font-weight: bold;
 }
-table .tablaFichaTecnica {
-	border-collapse: collapse;
-    width: 100%;
-	border: 1px solid black;
-	
+table.tablaFicha  {
+    border-collapse: collapse;
+    width: 85%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.72355em;
+    font-weight: 400;
+    line-height: 1.6em;
 }
-table .tablaFichaTecnica th, td {
-	text-align: left;
+table.tablaFicha tr:hover td {
+    background: #F0F6FF;
+    font-style: italic;
+}
+table.tablaFicha td, tr{
+    text-align: left;
     padding: 8px;
+    border-bottom: 2px solid white;
 }
-table .tablaFichaTecnica tr:nth-child(even){
-	background-color: #f2f2f2
+table.tablaFicha tr:nth-child(odd){
+    background-color: #B0D3FF;
 }
-table .tablaFichaTecnica th {
-	background-color: #4CAF50;
-    color: white;
+table.tablaFicha td:nth-child(odd){
+    width: 35%;
+    font-weight: bold;
+}
+table.tablaFicha tr:nth-child(even){
+    background-color: #E2EFFF;
+}
+table.tablaFicha tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+table.tablaFicha tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+table.tablaFicha tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+table.tablaFicha tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
 }
