@@ -145,7 +145,7 @@
 									<td>Direccion:</td>
 									<td>
 										<c:forEach var="direccion" items="${persona.direcciones}">
-												${direccion.direccion}
+												${direccion.direccion}<br/>
 										</c:forEach>
 									</td>
 								</tr>
@@ -154,7 +154,7 @@
 									<td>
 										<c:forEach var="direccion"
 											items="${persona.direcciones}">
-											${direccion.cod_postal}
+											${direccion.cod_postal}<br/>
 										</c:forEach>
 									</td>
 								</tr>
@@ -163,7 +163,7 @@
 									<td>
 										<c:forEach var="direccion"
 											items="${persona.direcciones}">
-											${direccion.localidad}
+											${direccion.localidad}<br/>
 										</c:forEach>
 									</td>
 								</tr>
@@ -171,7 +171,7 @@
 									<td>Provincia:</td>
 									<td>
 										<c:forEach var="direccion" items="${persona.direcciones}">
-											${direccion.provincia}
+											${direccion.provincia}<br/>
 										</c:forEach>
 									</td>
 								</tr>
@@ -200,39 +200,34 @@
 						<li>
 							<div class="top-grids">
 					      			<div class="top-grid1">
-					      				<img src="../resources/images/f1.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="listaEmpleados"><h4>Listar todos los empleados<h4></h4></a>
-						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+						      			<p>Listar todos los empleados</p>
 					      			</div>
 					      			 <div class="top-grid1">
-					      				<img src="../resources/images/f2.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="listaEmpleadosGroup?group=empleado.departamento.nombre"><h4>Listar por departamento<h4></h4></a>
-						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+						      			<p>Listar todos los empleados ordenado por departamento</p>
 					      			</div>
 					      			 <div class="top-grid1">
-					      				<img src="../resources/images/f3.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="listaEmpleadosGroup?group=empleado.categoria.nombre"><h4>Listar por categoria<h4></h4></a>
-						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+						      			<p>Listar todos los empleados ordenado por categoria</p>
 					      			</div>
 					      			 <div class="top-grid1">
-					      				<img src="../resources/images/f4.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="listaEmpleadosGroup?group=nombre"><h4>Listar por nombre<h4></h4></a>
-						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+						      			<p>Listar todos los empleados ordenado por nombre</p>
 					      			</div>
 					      			<div class="top-grid1">
-					      				<img src="../resources/images/f4.jpg" title="" alt="">
 					      			</div>
 					      			<div class="top-grid2">
 						      			<a href="listaEmpleadosGroup?group=empleado.cod_empleado"><h4>Listar por codigo de empleado<h4></h4></a>
-						      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+						      			<p>Listar todos los empleados ordenado por codigo</p>
 					      			</div>
       							</div>   		
 								<div class="clear"> </div>
