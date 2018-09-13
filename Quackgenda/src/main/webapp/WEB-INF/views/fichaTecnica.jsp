@@ -85,64 +85,64 @@
 					<ul>
 						<li class="active">
 							<div class="top-grids">
-								<table class="tablaFichaTecnica">
+								<table class="tablaFicha">
 								<tr>
-									<th>Nombre:</th>
+									<td>Nombre:</td>
 									<td><c:out value="${persona.nombre}" /></td>
 								</tr>
 								<tr>
-									<th>Apellido 1:</th>
+									<td>Apellido 1:</td>
 									<td><c:out value="${persona.apellido1}" /></td>
 								</tr>
 								<tr>
-									<th>Apellido 2:</th>
+									<td>Apellido 2:</td>
 									<td><c:out value="${persona.apellido2}" /></td>
 								</tr>
 								<tr>
-									<th>DNI:</th>
+									<td>DNI:</td>
 									<td><c:out value="${persona.dni}" /></td>
 								</tr>
 								<tr>
-									<th>Fecha de Nacimiento:</th>
+									<td>Fecha de Nacimiento:</td>
 									<td><c:out value="${persona.fecha_nacimiento}" /></td>
 								</tr>
 								<tr>
-									<th>Codigo de Empleado:</th>
+									<td>Codigo de Empleado:</td>
 									<td><c:out value="${persona.empleado.cod_empleado}" /></td>
 								</tr>
 								<tr>
-									<th>Salario:</th>
+									<td>Salario:</td>
 									<td><c:out value="${persona.empleado.salario}" /></td>
 								</tr>
 								<tr>
-									<th>Fecha de alta:</th>
+									<td>Fecha de alta:</td>
 									<td><c:out value="${persona.empleado.fecha_alta}" /></td>
 								</tr>
 								<tr>
-									<th>Imagen:</th>
+									<td>Imagen:</td>
 									<td><c:out value="${persona.empleado.imagen_empleado}" /></td>
 								</tr>
 								<tr>
-									<th>Categoria:</th>
+									<td>Categoria:</td>
 									<td><c:out value="${persona.empleado.categoria.nombre}" /></td>
 								</tr>
 								<tr>
-									<th>Descripcion:</th>
+									<td>Descripcion:</td>
 									<td><c:out
 											value="${persona.empleado.categoria.descripcion}" /></td>
 								</tr>
 								<tr>
-									<th>Nombre Departamento:</th>
+									<td>Nombre Departamento:</td>
 									<td><c:out value="${persona.empleado.departamento.nombre}" /></td>
 								</tr>
 								<tr>
-									<th>Telefono:</th>
+									<td>Telefono:</td>
 									<td><c:forEach var="telefono" items="${persona.telefonos}">
 													${telefono.telefono}<br />
 										</c:forEach></td>
 								</tr>
 								<tr>
-									<th>Direccion:</th>
+									<td>Direccion:</td>
 									<td>
 										<c:forEach var="direccion" items="${persona.direcciones}">
 												${direccion.direccion}
@@ -150,7 +150,7 @@
 									</td>
 								</tr>
 								<tr>
-									<th>Codigo Postal:</th>
+									<td>Codigo Postal:</td>
 									<td>
 										<c:forEach var="direccion"
 											items="${persona.direcciones}">
@@ -159,7 +159,7 @@
 									</td>
 								</tr>
 								<tr>
-									<th>Localidad:</th>
+									<td>Localidad:</td>
 									<td>
 										<c:forEach var="direccion"
 											items="${persona.direcciones}">
@@ -168,7 +168,7 @@
 									</td>
 								</tr>
 								<tr>
-									<th>Provincia:</th>
+									<td>Provincia:</td>
 									<td>
 										<c:forEach var="direccion" items="${persona.direcciones}">
 											${direccion.provincia}
