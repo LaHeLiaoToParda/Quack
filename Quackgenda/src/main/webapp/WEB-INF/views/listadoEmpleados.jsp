@@ -23,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   white-space: nowrap;
   position: relative;
   top:140px;
-  left:34.5%;
+  left:39%;
 }
 
 .container-1 input#search{
